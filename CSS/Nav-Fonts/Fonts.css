@@ -1,0 +1,9 @@
+/*=== เรียกใช้ฟอนต์ ===*/
+@font-face {
+    font-family: Anantason;
+    src: url(/SRC/Fonts/AnantasonReno-ExtraExpanded.woff);
+}
+html,body{
+    font-family: Anantason;
+}
+/*=== เรียกใช้ฟอนต์ ===*/

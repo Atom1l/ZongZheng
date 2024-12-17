@@ -1,0 +1,29 @@
+.navbar-left-panel, .navbar-right-panel{
+    transition: 0.3s ease;
+}
+.dropdown-navbar{
+    position: relative;
+}
+.dropdown-navbar-list {
+    position: absolute;
+    top: -10px;
+    left: -30px;
+    background-color: transparent;
+    color: white;
+    text-align: end;
+    display: none;
+    white-space: nowrap;
+    padding: 80px 10px 10px 10px;
+    z-index: 1000;
+}
+.dropdown-navbar img{
+    cursor: pointer;
+}
+.dropdown-navbar:hover .dropdown-navbar-list,
+.dropdown-navbar-list:hover {
+    display: block;
+}
+
+@media(max-width:767px){
+
+}
