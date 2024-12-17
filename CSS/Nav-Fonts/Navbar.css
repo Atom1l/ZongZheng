@@ -1,3 +1,6 @@
+nav{
+    background-color: #282828;
+}
 .navbar-left-panel, .navbar-right-panel{
     transition: 0.3s ease;
 }
