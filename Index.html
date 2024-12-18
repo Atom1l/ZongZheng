@@ -16,37 +16,53 @@
     <link rel="stylesheet" href="/CSS/Index/Index.css">
 
     <!-- Navbar -->
-    <nav class="p-3 fixed-top">
-        <div class="d-flex flex-row justify-content-between align-items-center">
-            <!-- Left Panel -->
-            <div class="navbar-left-panel">
-                <div class="logo">
-                    <a href="#">
-                        <img src="/SRC/Index/1-LOGO-edit.png" alt="Logo">
-                    </a>
-                </div> <!-- Logo -->
+    <nav class="navbar fixed-top">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <!-- Home Logo on the Left -->
+            <a class="navbar-brand">
+                <img src="/SRC/Index/1-LOGO-edit.png" alt="zongzheng">
+            </a>
+    
+            <!-- Language Icon and Collapse Button on the Right -->
+            <div class="d-flex align-items-center">
+                <!-- Language Icon -->
+                <a class="navbar-language">
+                    <img src="/SRC/Index/1-LANGUAGE-ENG.png" alt="language">
+                </a>
+    
+                <!-- Collapse Button -->
+                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </div>
-            <!-- Right Panel -->
-            <div class="navbar-right-panel d-flex flex-row align-items-center">
-                <div class="me-4">
-                    <a href="#"><img src="/SRC/Index/1-LANGUAGE-ENG.png" alt="Language"></a> <!-- Language Switch -->
-                </div> 
-                <div class="dropdown-navbar position-relative"> <!-- Dropdown -->
-                    <img src="/SRC/Index/1-navigation-bar.png" alt="navbar-right" class="dropdown-toggle-img">
-                    <div class="dropdown-navbar-list text-white mt-2"> <!-- Dropdrown-list -->
-                        <a href="#" class="text-white text-decoration-none"><p class="nav-home">Home</p></a>
-                        <a href="#" class="text-white text-decoration-underline"><p class="nav-about">About us</p></a>
-                        <a href="#" class="text-white text-decoration-underline"><p class="nav-work">Work</p></a>
-                        <a href="#" class="text-white text-decoration-underline"><p class="nav-contact">Contact</p></a>
-                    </div>
-                </div>
+    
+            <!-- Collapsible Navbar Content -->
+            <div class="navbar-collapse collapse justify-content-end">
+                <ul class="navbar-nav text-end pe-2 mt-3">
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 text-white text-decoration-none" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 text-white text-decoration-underline" href="#">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 text-white text-decoration-underline" href="#">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 text-white text-decoration-underline" href="#">Contact</a>
+                    </li>
+                </ul>
             </div>
-        </div>   
-    </nav>    
+        </div>
+    </nav>
+          
 
 </head>
 <body>
-    <section class="d-flex justify-content-center align-items-center bg-dark" style="width: 100vw; height: 100vh;">
+
+
+    <section class="d-flex justify-content-center align-items-center bg-dark" id="home" style="width: 100vw; height: 100vh;">
         <div class="display-1 fw-bold fst-italic text-center text-white">เหนื่อยแก้เว็บหน่อยนะ...</div>
     </section>
     
