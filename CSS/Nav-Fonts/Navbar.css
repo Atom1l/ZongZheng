@@ -1,3 +1,10 @@
+#navbar {
+    position: fixed;
+    width: 100%;
+    top: -110px; /* Initially hidden */
+    z-index: 1050; /* Ensure it appears above other content */
+    transition: top 0.7s ease-in-out; /* Smooth show/hide effect */
+}
 .navbar { /*=== make navbar naked ===*/
     box-shadow: none;
     border-bottom: none;
