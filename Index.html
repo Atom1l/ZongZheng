@@ -64,10 +64,53 @@
 
 </head>
 <body>
+    <!-- Section-Sky -->
+    <section class="section-sky d-flex justify-content-center align-items-center">
+        <div class="home-logo" id="home-logo"><img src="SRC/Index/1-HOME-TEXT1.png" alt="Home-logo"></div> <!-- Logo -->
+        <div class="cloud-parent"> <!-- Cloud -->
+            <div class="cloud-left" id="cloud_left"><img src="SRC/Index/1-CLOUD1.png" alt="cloud-left"></div>
+            <div class="cloud-right" id="cloud_right"><img src="SRC/Index/1-CLOUD1.png" alt="cloud-right"></div>
+        </div>
+    </section>
 
+    <section class="section-rooftop">
+        <div class="rooftop-parent d-flex flex-column justify-content-center align-items-center">
+            <div class="billboard">
+                <img src="/SRC/Index/2-SEARCH-BG.png" alt="billboard">
+                <div class="billboard-text">Select the right<br>Freelance services.</div>
+                <div>
+                    <div class="search-input-border">
+                        <input type="text" name="searchbar" id="searchbar" title="Searchbar" placeholder="">
+                    </div>
+                    <button type="button" id="searchbutton" title="Searchbutton" onclick="redirectToWebsite()"> <!-- Search button -->
+                        <img src="SRC/Index/1-SEARCH-ICON.png" class="search-icon-img" alt="searchbutton">
+                    </button>
+                    <button type="button" id="clearbutton" title="Clearbutton" onclick="document.getElementById('searchbar').value = ''"> <!-- Clear button -->
+                        <img src="SRC/Index/1-CROSS-ICON.png" class="clear-icon-img" alt="clearbutton">
+                    </button>
+                    <div class="service-list-text">Categories :</div>
+                    <div class="button-service-list">
+                        <!--Top-row-services-->
+                        <button class="service-button product-service" id="product-service-btn" type="button" title="Production"
+                        onclick="document.getElementById('searchbar').value = 'Production'">PRODUCTION</button> <!-- Production-Service -->
 
-    <section class="d-flex justify-content-center align-items-center bg-dark" id="home" style="width: 100vw; height: 500vh;">
-        <div class="display-1 fw-bold fst-italic text-center text-white">เหนื่อยแก้เว็บหน่อยนะ...</div>
+                        <button class="service-button graphic-service" id="graphic-service-btn" type="button" title="Graphic"
+                        onclick="document.getElementById('searchbar').value = 'Graphic'">GRAPHIC</button> <!-- Graphic-Service -->
+
+                        <button class="service-button sound-service" id="sound-service-btn" type="button" title="Sound"
+                        onclick="document.getElementById('searchbar').value = 'Sound'">SOUND</button> <!-- Sound-Service -->
+
+                        <!--Bottom-row-services-->
+                        <button class="service-button illustration-service" id="illustration-service-btn" type="button" title="Illustration"
+                        onclick="document.getElementById('searchbar').value = 'Illustration'">ILLUSTRATION</button> <!-- Illustration-Service -->
+                        
+                        <button class="service-button animation-service" id="animation-service-btn" type="button" title="Animation"
+                        onclick="document.getElementById('searchbar').value = 'Animation'">ANIMATION</button> <!-- Animation-Service -->
+                    </div>
+                </div>
+            </div>
+            <div class="rooftop"><img src="SRC/Index/2-ROOFTOP.png" alt="rooftop"></div>
+        </div>
     </section>
     
 

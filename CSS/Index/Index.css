@@ -5,4 +5,154 @@ html,body{
     overflow-x: hidden;
     overflow-y: auto;
     scroll-behavior: smooth;
+    -webkit-user-select: none;
+    user-select: none;
+}
+body{
+    background: url(/SRC/Index/1-BG.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*- Section -*/
+.section-sky, .section-rooftop{
+    width: 100%;
+    height: 100%;  
+    position: relative;
+}
+
+/*- Section-1 -*/
+.home-logo{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    z-index: 2;
+}
+.cloud-parent{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+.cloud-left,
+.cloud-right {
+    position: absolute;
+    transform: translateY(-50%);
+}
+.cloud-left{
+    top: 30%;
+    left: 0;
+}
+.cloud-right{
+    top: 60%;
+    right: 0;
+}
+
+/*-Section-Rooftop-*/
+.billboard{
+    position: relative;
+    margin-top: -25%;
+    margin-left: -10px;
+    z-index: 3;
+}
+.billboard-text{
+    position: absolute;
+    top: 30%;
+    left: 13%;
+    font-size: 5rem;
+}
+.search-input-border{
+    position: absolute;
+    top: 53%;
+    left: 13%;
+    padding: 10px;
+    padding-left: 90px;
+    width: 35%;
+    height: 8%;
+    border-radius: 15px;
+    font-size: 2.5rem;
+    background-color: white;
+    border: solid 2px #333;
+}
+#searchbar{
+    position: absolute;
+    top: 0%;
+    left: 10.75%;
+    padding: 10px;
+    width: 80%;
+    outline: none;
+    background: none;
+    border: none;
+    font-size: 2.5rem;
+}
+#searchbutton{
+    position: absolute;
+    top: 32.5%;
+    left: 1.3%;
+    padding: 10px;
+    border: none;
+    background: none;
+    transform: scale(0.075);
+}
+#clearbutton{
+    position: absolute;
+    top: 8.75%;
+    left: 18.8%;
+    padding: 10px;
+    border: none;
+    background: none;
+    transform: scale(0.05);
+}
+.service-list-text{
+    position: absolute;
+    top: 63%;
+    left: 13%;
+    font-size: 2rem;
+}
+.service-button{
+    padding: 15px 30px 10px 30px;
+    outline: none;
+    border: solid 2px white;
+    border-radius: 50px;
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: underline;
+    background-color: #282828;
+    transition: 0.3s ease;
+}
+.service-button:hover{
+    transform: scale(1.05);
+}
+.product-service{
+    position: absolute;
+    top: 68%;
+    left: 13%;
+}
+.graphic-service{
+    position: absolute;
+    top: 68%;
+    left: 25%;
+}
+.sound-service{
+    position: absolute;
+    top: 68%;
+    left: 34.5%;
+}
+.illustration-service{
+    position: absolute;
+    top: 74%;
+    left: 13%;
+}
+.animation-service{
+    position: absolute;
+    top: 74%;
+    left: 25%;
 }
