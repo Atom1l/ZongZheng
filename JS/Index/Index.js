@@ -8,7 +8,7 @@ function applyParallax() {
     // Adjust positions based on scroll value
     cloud_left.style.transform = `translate(${value * -2}px, -50%)`;
     cloud_right.style.transform = `translate(${value * 2}px, -50%)`;
-    homelogo.style.transform = `translateY(${value * 0.5}px)`;
+    homelogo.style.transform = `translateY(${value * 0.2}px)`;
 }
 
 // Apply parallax on page load

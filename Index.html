@@ -16,13 +16,14 @@
     <link rel="stylesheet" href="/CSS/Nav-Fonts/Fonts.css"> <!-- Font CSS -->
     <!-- CSS -->
     <link rel="stylesheet" href="/CSS/Nav-Fonts/Navbar.css"> <!-- Navbar CSS -->
-    <link rel="stylesheet" href="/CSS/Index/Index.css">
+    <link rel="stylesheet" href="/CSS/Index/Index.css"> <!-- Index CSS -->
+    <link rel="stylesheet" href="/CSS/Index/Indexresponsive.css"> <!-- Index Responsive CSS -->
 
     <!-- Navbar -->
     <nav class="navbar fixed-top" id="navbar">
         <div class="container-fluid d-flex justify-content-between align-items-center">
             <!-- Home Logo on the Left -->
-            <a class="navbar-brand">
+            <a class="navbar-brand" href="Index.html#Index">
                 <img src="/SRC/Index/1-LOGO-edit.png" alt="zongzheng">
             </a>
     
@@ -65,14 +66,14 @@
 </head>
 <body>
     <!-- Section-Sky -->
-    <section class="section-sky d-flex justify-content-center align-items-center">
+    <section class="section-sky d-flex justify-content-center align-items-center" id="Index">
         <div class="home-logo" id="home-logo"><img src="SRC/Index/1-HOME-TEXT1.png" alt="Home-logo"></div> <!-- Logo -->
         <div class="cloud-parent"> <!-- Cloud -->
             <div class="cloud-left" id="cloud_left"><img src="SRC/Index/1-CLOUD1.png" alt="cloud-left"></div>
             <div class="cloud-right" id="cloud_right"><img src="SRC/Index/1-CLOUD1.png" alt="cloud-right"></div>
         </div>
     </section>
-
+    <!-- Section-Rooftop -->
     <section class="section-rooftop">
         <div class="rooftop-parent d-flex flex-column justify-content-center align-items-center">
             <div class="billboard">
@@ -112,6 +113,24 @@
             <div class="rooftop"><img src="SRC/Index/2-ROOFTOP.png" alt="rooftop"></div>
         </div>
     </section>
+    <!-- Section-Production -->
+    <section class="section-production d-flex flex-column justify-content-center align-items-center">
+        <div class="production-container d-flex flex-row justify-content-center align-items-center gap-production">
+            <div class="pd-compressor-with-text">
+                <a class="pd-text">Production</a>
+                <div class="pd-compressor"><img src="SRC/Index/Compresser.png" alt="compresser"></div>
+            </div>
+            <div class="pd-window-left">
+                <img src="SRC/Index/3-window-left-close-resize.png" alt="production-window-left" class="pd-window-left-img" 
+                onmouseover="this.src='SRC/Index/3-window-left-open.png'" onmouseout="this.src='SRC/Index/3-window-left-close-resize.png'">
+            </div>
+            <div class="pd-window-right">
+                <img src="SRC/Index/3-window-right-close-resize.png" alt="production-window-right" class="pd-window-left-img"
+                onmouseover="this.src='SRC/Index/3-window-right-open-resize.png'" onmouseout="this.src='SRC/Index/3-window-right-close-resize.png'">
+            </div>
+        </div>
+    </section>
+    
     
 
 
