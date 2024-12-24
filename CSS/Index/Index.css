@@ -1048,17 +1048,14 @@ body{
         margin-bottom: 300px;
     }
     /*-section-sound-*/
-    .section-sound{
-        border: solid 2px yellow;
-    }
     .sound-container{
-        margin-top: 70px;
+        margin-top: 0px;
         margin-left: 100px;
         transition: 0.3s ease;
     }
     .sd-play-button{
         position: absolute;
-        margin-top: -750px;
+        margin-top: -680px;
         margin-left: -1480px;
         cursor: pointer;
         transition: 0.3s ease;
@@ -1068,13 +1065,13 @@ body{
         display: none;
     }
     .sd-left-window{
-        margin-top: 350px;
+        margin-top: 420px;
         margin-bottom: 350px;
         transform: scale(1.3);
         transition: 0.3s ease;
     }
     .sd-right-window{
-        margin-top: -210px;
+        margin-top: -145px;
         margin-left: 250px;
         margin-bottom: 0px;
         transform: scale(1.1);
@@ -1085,11 +1082,15 @@ body{
         text-align: center;
         font-size: 2.2rem;
         color: white;
-        margin-top: -570px;
+        margin-top: -500px;
         margin-left: 270px;
         cursor: pointer;
         transform: rotate(-3.5deg);
         transition: 0.5s ease;
         z-index: 2;
+    }
+    .sd-cat{
+        margin-top: 150px;
+        margin-left: 1200px;
     }
 }
