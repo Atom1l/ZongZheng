@@ -2,11 +2,20 @@
 const cloud_left = document.getElementById('cloud_left');
 const cloud_right = document.getElementById('cloud_right');
 const homelogo = document.getElementById('home-logo');
+const bird = document.getElementById('bird');
 function applyParallax() {
     let value = window.scrollY;
     cloud_left.style.transform = `translate(${value * -2}px, -50%)`;
     cloud_right.style.transform = `translate(${value * 2}px, -50%)`;
     homelogo.style.transform = `translateY(${value * 0.2}px)`;
+
+    if (value > 1000) {
+      let adjustedValue = value - 1000; // Start counting from 0 after 100px
+      bird.style.transform = `translate(${adjustedValue * 1.2}px, ${adjustedValue * 0.6}px)`;
+  } else {
+      // Keep the bird at its initial position
+      bird.style.transform = `translate(0, 0)`;
+  }
 }
 // Apply parallax on page load
 window.addEventListener('load', applyParallax);
@@ -14,24 +23,13 @@ window.addEventListener('load', applyParallax);
 window.addEventListener('scroll', applyParallax);
 
 //========= Bird Parallax ==========//
-// let bird = document.getElementById("bird");
-// let productionSection = document.querySelector(".section-production");
-// let graphicSection = document.querySelector(".section-graphic");
-
-// let productionTop = productionSection.offsetTop;
-// let graphicBottom = graphicSection.offsetTop + graphicSection.offsetHeight;
-// window.addEventListener("scroll", () => {
-//     let scrollPosition = window.scrollY;
-
-//     if (scrollPosition >= productionTop && scrollPosition <= graphicBottom) {
-//         let progress = (scrollPosition - productionTop) / (graphicBottom - productionTop);
-
-//         let birdX = progress * (window.innerWidth *2);
-//         let birdY = progress * (window.innerHeight);
-//         bird.style.transform = `translate(${birdX}px, ${birdY}px)`;
-
-//     }
-// });
+// const bird = document.getElementById('bird');
+// function applyParallax() {
+//     let value = window.scrollY;
+//     bird.style.transform = `translate(${value * 0.5}px, ${value * 0.5}px)`;
+// }
+// window.addEventListener('load', applyParallax);
+// window.addEventListener('scroll', applyParallax);
 
 //========= Searhbox billboard ==========//
 var input = document.getElementById("searchbar");
@@ -96,3 +94,24 @@ document.addEventListener("DOMContentLoaded", function () {
       isPlaying = !isPlaying;
   });
 });
+
+//========= Email Copying ==========//
+function EmailCopying(){ 
+  /* Copy text into clipboard */ 
+  navigator.clipboard.writeText("zongzhen.inc@gmail.com"); 
+  document.getElementById('email-btn').value = 'Copied!'; 
+} 
+
+function MouseoutEmail(){
+  document.getElementById('email-btn').value = "(Email)"; 
+}
+
+//========= Tel Copying ==========//
+function TelCopying(){
+  navigator.clipboard.writeText("+662123456789");
+  document.getElementById('tel-btn').value = 'Copied!';
+}
+
+function MouseoutTel(){
+  document.getElementById('tel-btn').value = '+662123456789';
+}

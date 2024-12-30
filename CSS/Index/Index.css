@@ -26,7 +26,7 @@ body{
     position: relative;
     transition: 0.3s ease;
 }
-.section-production, .section-sound{
+.section-production, .section-sound, .section-aboutus{
     width: 100%;
     height: auto;  
     position: relative;
@@ -34,7 +34,7 @@ body{
     background: #eb613e;
     transition: 0.3s ease;
 }
-.section-graphic{
+.section-graphic, .section-motion, .section-footer{
     width: 100%;
     height: auto;  
     position: relative;
@@ -43,6 +43,20 @@ body{
     transition: 0.3s ease;
 }
 /*- Section-1 -*/
+#bird{
+    position: absolute;
+    margin-top: 250px;
+    margin-left: -1250px;
+    height: auto;
+    overflow: hidden;
+    pointer-events: none;
+    transition: 0.3s ease;
+    transition: transform 0.2s ease-out;
+    z-index: 5;
+}
+#bird img{
+    transition: 0.3s ease;
+}
 .home-logo{
     position: relative;
     width: 100%;
@@ -272,14 +286,6 @@ body{
 .bird-pd-gp-container{
     width: 100%;
 }
-#bird{
-    position: absolute;
-    margin-top: -400px;
-    margin-left: -1250px;
-    height: auto;
-    overflow: hidden;
-    z-index: 5;
-}
 /*-section-sound-*/
 .sound-container{
     margin-left: 100px;
@@ -287,7 +293,7 @@ body{
 }
 .sd-play-button{
     position: absolute;
-    margin-top: -525px;
+    margin-top: -580px;
     margin-left: -1120px;
     cursor: pointer;
     transition: 0.3s ease;
@@ -301,7 +307,7 @@ body{
 }
 .sd-left-window{
     margin-top: 150px;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
     transition: 0.3s ease;
 }
 .sd-right-window{
@@ -314,7 +320,7 @@ body{
     text-align: center;
     font-size: 1.7rem;
     color: white;
-    margin-top: -400px;
+    margin-top: -405px;
     margin-left: 160px;
     cursor: pointer;
     transform: rotate(-3.5deg);
@@ -331,6 +337,198 @@ body{
     transform: scale(0.8);
     margin-left: 800px;
     z-index: 4;
+    transition: 0.3s ease;
+}
+/*-section-motion-*/
+.motion-container{
+    margin-left: 100px;
+    transition: 0.3s ease;
+}
+.left-motion, .middle-motion, .right-motion{
+    margin-top: 200px;
+    margin-bottom: 200px;
+    transition: 0.3s ease;
+}
+.motion-eye{
+    position: absolute;
+    margin-left:-1500px;
+    margin-top: -250px;
+    transition: 0.3s ease;
+}
+.mt-text{
+    position: absolute;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    margin-top: -395px;
+    margin-left: 1115px;
+    cursor: pointer;
+    transform: rotate(7.5deg);
+    transition: 0.5s ease;
+    z-index: 5;
+
+}
+.mt-text:hover{
+    color: #b1b1b1;
+    transform: scale(1.05) rotate(7.5deg);
+    transition: 0.3s ease;
+}
+.middle-motion{
+    margin-left: 50px;
+    margin-right: 130px;
+}
+/*-section-aboutus-*/
+.aboutus-container{
+    margin-left: 30px;
+    transition: 0.3s ease;
+}
+.abt-door{
+    margin-top: 200px;
+    margin-bottom: -0px;
+    margin-right: 200px;
+    transition: 0.3s ease;
+}
+.abt-bike{
+    position: absolute;
+    margin-top: 743.5px;
+    margin-left: 730px;
+    transition: 0.3s ease;
+}
+.abt-text{
+    position: absolute;
+    text-align: center;
+    font-size: 2rem;
+    color: #282828;
+    margin-top: 85px;
+    margin-left: -900px;
+    cursor: pointer;
+    transform: rotate(-5deg);
+    transition: 0.5s ease;
+    z-index: 5;
+}
+.abt-text:hover{
+    color: #131313;
+    transform: scale(1.05) rotate(-5deg);
+    transition: 0.3s ease;
+}
+/*-section-footer-*/
+.upper-column-container{
+    margin-top: 150px;
+    margin-bottom: 100px;
+    transition: 0.3s ease;
+}
+.gap-upper-footer{
+    gap: 15rem;
+    transition: 0.3s ease;
+}
+.footer-header{
+    position: relative;
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+    z-index: 2;
+}
+.footer-upper-column-text{
+    padding-left: 5px;
+    margin-bottom: 5px;
+    font-size: 1.3rem;
+    color: white;
+    cursor: pointer;
+}
+.footer-upper-column-blank{
+    padding-left: 5px;
+    margin-bottom: 5px;
+    font-size: 1.3rem;
+    color: #282828;
+    pointer-events: none;
+    cursor: none;
+}
+.upper-column-line{
+    width: 90%;
+    height: 2px;
+    background-color: white;
+    border-radius: 50px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+/*- Section-footer(down) -*/
+.down-footer-container{
+    padding: 0 90px 0 90px;
+    transition: 0.3s ease;
+}
+.inside-down-footer-container{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.footer-contact{
+    word-wrap: break-word;
+    width: 200px;
+}
+.footer-email{
+    position: absolute;
+    margin-top: -50px;
+    margin-left: 25px;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-color: #707070;
+    border: solid 2px #282828;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 1.5rem;
+    transform: rotate(-10deg);
+    transition: 0.3s ease;
+    z-index: 1;
+}
+.footer-email:hover{
+    font-size: 1.7rem;
+}
+.footer-hire-for-more{
+    position: absolute;
+    margin-top: -50px;
+    margin-left: 90px;
+    transform: scale(0.6);
+}
+.footer-hire-text{
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 60px;
+    font-size: 1.8rem;
+}
+.footer-tel{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 125px;
+    width: fit-content;
+    transform: scale(0.6);
+}
+.footer-tel-text{
+    position: absolute;
+    text-align: center;
+    font-size: 1.8rem;
+    text-decoration: underline;
+    background: none;
+    width: 260px;
+    border: none;
+    outline: none;
+    margin-top: 25px;
+    margin-left: 45px;
+    transition: 0.3s ease;
+    z-index: 2;
+}
+.gap-icon{
+    gap: 3rem;
+}
+.footer-zongzheng-inc{
+    margin-top: 20px;
+    color: white;
+    font-weight: lighter;
+    font-family: 2rem;
+    letter-spacing: 3px;
+}
+.footer-left-panel, .footer-right-panel{
     transition: 0.3s ease;
 }
 
@@ -379,6 +577,34 @@ body{
     .sd-text{
         margin-top: -450px;
     }
+    /*-section-motion-*/
+    .motion-container{
+        transform: scale(0.8);
+    }
+    .left-motion, .middle-motion, .right-motion{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        transition: 0.3s ease;
+    }
+    /*-section-aboutus*/
+    .aboutus-container{
+        transform: scale(0.8);
+    }
+    .abt-text{
+        margin-bottom: -15px;
+    }
+    .abt-door,.abt-window{
+        margin-top: 100px;
+        margin-bottom: -115px;
+    }
+    .abt-bike{
+        margin-bottom: -16px; 
+    }
+    /*-section-first-footer*/
+    .upper-column-container{
+        transform: scale(0.9);
+    }
+    
 }
 @media(max-width:1470px){
     /*-section-production*/
@@ -398,11 +624,37 @@ body{
     .sound-container{
         transform: scale(0.75);
     }
+    /*-section-motion-*/
+    .motion-container{
+        transform: scale(0.75);
+    }
+    .left-motion, .middle-motion, .right-motion{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        transition: 0.3s ease;
+    } 
+    /*-section-aboutus*/
+    .aboutus-container{
+        transform: scale(0.75);
+    }
+    .abt-text{
+        margin-bottom: 15px;
+    }
+    .abt-door,.abt-window{
+        margin-top: 50px;
+        margin-bottom: -141px;
+    }
+    .abt-bike{
+        margin-bottom: 7px; 
+    }
     
 }
 
 @media(max-width:1400px){
     /*-section-sky-*/
+    #bird img{
+        transform: scale(0.9);
+    }
     .home-logo img{
         transform: scale(0.9);
     }
@@ -435,9 +687,35 @@ body{
         margin-left: -60px;
         margin-right: -220px;
     }
+    /*-section-motion-*/
+    .motion-container{
+        transform: scale(0.7);
+    }
+    .left-motion, .middle-motion, .right-motion{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        transition: 0.3s ease;
+    }
+    /*-section-aboutus*/
+    .aboutus-container{
+        transform: scale(0.7);
+    }
+    .abt-text{
+        margin-bottom: 30px;
+    }
+    .abt-door,.abt-window{
+        margin-top: 0px;
+        margin-bottom: -165px;
+    }
+    .abt-bike{
+        margin-bottom: 33px; 
+    }
 }
 
 @media(max-width:1230px){
+    #bird img{
+        transform: scale(0.8);
+    }
     /*-section-production*/
     .production-container{
         margin-left: 135px;
@@ -466,6 +744,41 @@ body{
     /*-section-sound-*/
     .sound-container{
         transform: scale(0.7);
+    }
+    /*-section-motion-*/
+    .motion-container{
+        transform: scale(0.6);
+    }
+    .left-motion, .middle-motion, .right-motion{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        transition: 0.3s ease;
+    }
+    /*-section-aboutus*/
+    .aboutus-container{
+        transform: scale(0.65);
+    }
+    .abt-text{
+        margin-bottom: 55px;
+    }
+    .abt-door,.abt-window{
+        margin-top: -50px;
+        margin-bottom: -188px;
+    }
+    .abt-bike{
+        margin-bottom: 60px; 
+    }
+    /*-section-first-footer*/
+    .upper-column-container{
+        transform: scale(0.8);
+    }
+    .gap-upper-footer{
+        gap: 10rem;
+    }
+    /*-section-second-footer-*/
+    .down-footer-container{
+        padding: 0px;
+        transform: scale(0.8);
     }
 }
 
@@ -503,6 +816,9 @@ body{
 
 @media(max-width:1100px){
     /*-section-sky-*/
+    #bird img{
+        transform: scale(0.7);
+    }
     .home-logo img{
         transform: scale(0.8);
     }
@@ -529,9 +845,21 @@ body{
         margin-top: 100px;
         margin-bottom: 50px;
     }
+    /*-section-motion-*/
+    .motion-container{
+        transform: scale(0.55);
+    }
+    .left-motion, .middle-motion, .right-motion{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        transition: 0.3s ease;
+    }
 }
 
 @media(max-width:1030px){
+    #bird img{
+        transform: scale(1);
+    }
     .production-container{
         display: flex;
         flex-direction: column !important;
@@ -606,9 +934,78 @@ body{
         margin-top: 1000px;
         margin-left: 300px;
     }
+    /*-section-motion-*/
+    .motion-container{
+        display: flex;
+        flex-direction: column !important;
+        margin-left: 0;
+        transform: scale(1);
+    }
+    .motion-eye{
+        margin-left: -350px;
+        margin-top: -1900px;
+    }
+    .mt-text{
+        margin-left: 175px;
+        margin-top: 1285px;
+    }
+    .left-motion{
+        margin-top: 150px;
+        transition: 0.3s ease;
+    }
+    .middle-motion{
+        margin-left: -77px;
+        margin-right: 0px;
+    }
+    .left-motion, .middle-motion{
+        margin-bottom: 100px;
+    }
+    .right-motion{
+        margin-left: 100px;
+        margin-bottom: 150px;
+    }
+    /*-section-aboutus*/
+    .aboutus-container{
+        display: flex;
+        flex-direction: column !important;
+        margin-left:0;
+        transform: scale(1);
+    }
+    .abt-text{
+        margin-top: 135px;
+        margin-left: 00px;
+    }
+    .abt-door{
+        margin-top: 200px;
+        margin-bottom: 0px;
+        margin-right: 0;
+    }
+    .abt-window{
+        display: none;
+    }
+    .abt-bike{
+        display: none;
+    }
+    /*-section-first-footer*/
+    .upper-column-container{
+        transform: scale(0.8);
+    }
+    .gap-upper-footer{
+        gap: 5rem;
+    }  
+    /*-section-second-footer-*/
+    .down-footer-container{
+        padding: 0px;
+        transform: scale(0.8);
+        margin-left: -65px;
+        margin-right: -65px;
+    }
 }
 
 @media(max-width:870px){
+    #bird img{
+        transform: scale(0.8);
+    }
     /*-section-sky-*/
     .cloud-left img,
     .cloud-right img{
@@ -682,10 +1079,91 @@ body{
         transform: scale(0.8);
         margin-top: 900px;
     }
-    
+    /*-section-motion-*/
+    .motion-container{
+        transform: scale(0.8);
+    }
+    .left-motion{
+        margin-top: -100px;
+    }
+    .right-motion{
+        margin-bottom:-100px;
+    }
+    /*-section-aboutus*/
+    .aboutus-container{
+        display: flex;
+        flex-direction: column !important;
+        margin-left:0;
+        transform: scale(0.8);
+    }
+    .abt-text{
+        margin-top: 150px;
+        margin-left: 00px;
+    }
+    .abt-door{
+        margin-top: 100px;
+        margin-bottom: -115px;
+    } 
+    /*-section-second-footer-*/
+    .down-footer-container{
+        padding: 0px;
+        transform: scale(0.7);
+        margin-left: -120px;
+        margin-right: -120px;
+    }
+    .inside-down-footer-container{
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
 }
+
+@media(max-width:780px){
+    #bird img{
+        transform: scale(0.7);
+    }
+    /*-section-first-footer*/
+    .upper-column{
+        display: flex;
+        flex-direction: column !important;
+    }
+    .upper-column-container{
+        align-items: center !important;
+        transform: scale(1);
+        word-wrap: break-word;
+        white-space: nowrap;
+        margin-bottom: 0px;
+    }
+    .gap-upper-footer{
+        gap: 0px;
+    }
+    /*-Section-below-footer-*/
+    .inside-down-footer-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        margin-left: 50px;
+    }
+    .footer-left-panel{
+        margin-left: -135px;
+    }
+    .footer-contact{
+        width: 300px;
+        margin-bottom: 60px;
+        margin-left: 150px;
+    }
+    .footer-right-panel{
+        text-align: center !important;
+        margin-top: 150px;
+    }
+}
+
 @media(max-width:700px){
     /*-section-sky-*/
+    #bird img{
+        transform: scale(0.6);
+    }
     .cloud-left{
         top: 20%;
     }
@@ -745,8 +1223,36 @@ body{
     .sd-text{
         margin-top: 525px;
     }
+    /*-section-motion-*/
+    .motion-container{
+        transform: scale(0.6);
+    }
+    .left-motion{
+        margin-top: -350px;
+    }
+    .right-motion{
+        margin-bottom:-350px;
+    }
+    /*-section-aboutus*/
+    .aboutus-container{
+        display: flex;
+        flex-direction: column !important;
+        margin-left:0;
+        transform: scale(0.6);
+    }
+    .abt-text{
+        margin-top: 50px;
+        margin-left: 00px;
+    }
+    .abt-door{
+        margin-top: -100px;
+        margin-bottom: -209px;
+    } 
 }
 @media(max-width:575.98px){
+    #bird img{
+        transform: scale(0.5);
+    }
     /*-section-rooftop*/
     .billboard{
         margin-top: -245px;
@@ -800,9 +1306,38 @@ body{
     .sd-text{
         margin-top: 525px;
     }
+    /*-section-motion-*/
+    .motion-container{
+        transform: scale(0.5);
+    }
+    .left-motion{
+        margin-top: -500px;
+    }
+    .right-motion{
+        margin-bottom:-500px;
+    }
+    /*-section-aboutus*/
+    .aboutus-container{
+        display: flex;
+        flex-direction: column !important;
+        margin-left:0;
+        transform: scale(0.5);
+    }
+    .abt-text{
+        margin-top: 100px;
+        margin-left: 00px;
+    }
+    .abt-door{
+        margin-top: -120px;
+        margin-bottom: -272px;
+    } 
+    
 }
 @media(max-width:485px){
     /*-section-sky-*/
+    #bird img{
+        transform: scale(0.4);
+    }
     .cloud-left{
         left: 0%;
     }
@@ -865,6 +1400,31 @@ body{
     .sd-text{
         margin-top: 480px;
     }
+    /*-section-motion-*/
+    .motion-container{
+        transform: scale(0.45);
+    }
+    .left-motion{
+        margin-top: -550px;
+    }
+    .right-motion{
+        margin-bottom:-550px;
+    }
+    /*-section-aboutus*/
+    .aboutus-container{
+        display: flex;
+        flex-direction: column !important;
+        margin-left:0;
+        transform: scale(0.45);
+    }
+    .abt-text{
+        margin-top: 100px;
+        margin-left: 00px;
+    }
+    .abt-door{
+        margin-top: -150px;
+        margin-bottom: -298px;
+    } 
 }
 @media(max-width:375px){
     /*-section-sky-*/
@@ -933,9 +1493,30 @@ body{
     .sd-text{
         margin-top: 480px;
     }
+    /*-section-motion-*/
+    .motion-container{
+        transform: scale(0.4);
+    }
+    .left-motion{
+        margin-top: -650px;
+    }
+    .right-motion{
+        margin-bottom:-650px;
+    }
+    /*-section-second-footer-*/
+    .down-footer-container{
+        transform: scale(0.5);
+    }
+    .inside-down-footer-container{
+        margin-top: -100px;
+        margin-bottom: -50px;
+    }
 }
 @media(max-width:310px){
     /*-section-sky-*/
+    #bird img{
+        transform: scale(0.3);
+    }
     .home-logo img{
         transform: scale(0.5);
     }
@@ -982,7 +1563,7 @@ body{
         transform: scale(0.3);
     }
     .gp-window{
-        margin-top: -600px;
+        margin-top: -300px;
         margin-bottom: -600px;
     }
     /*-section-sound*/
@@ -1001,9 +1582,37 @@ body{
     .sd-text{
         margin-top: 530px;
     }
+    /*-section-motion-*/
+    .motion-container{
+        transform: scale(0.3);
+    }
+    .left-motion{
+        margin-top: -800px;
+    }
+    .right-motion{
+        margin-bottom:-800px;
+    }
+    /*-section-aboutus*/
+    .aboutus-container{
+        display: flex;
+        flex-direction: column !important;
+        margin-left:0;
+        transform: scale(0.4);
+    }
+    .abt-text{
+        margin-top: 125px;
+        margin-left: 00px;
+    }
+    .abt-door{
+        margin-top: -150px;
+        margin-bottom: -337px;
+    } 
 }
 @media(min-width:1921px){
     /*-section-sky-*/
+    #bird img{
+        transform: scale(1.52);
+    }
     .cloud-left img,
     .cloud-right img{
         transform: scale(1.52);
@@ -1092,5 +1701,45 @@ body{
     .sd-cat{
         margin-top: 150px;
         margin-left: 1200px;
+    }
+    /*-section-motion-*/
+    .motion-eye{
+        margin-left: -1600px;
+        z-index: 5;
+    }
+    .mt-text{
+        font-size: 2.5rem;
+        margin-left: 1550px;
+        margin-top: -525px;
+        z-index: 5;
+    }
+    .left-motion, .middle-motion, .right-motion{
+        margin-top: 400px;
+        margin-bottom: 400px;
+        transform: scale(1.3);
+    }
+    .middle-motion{
+        margin-left: 250px;
+        margin-right: 350px;
+    }
+    /*-section-aboutus*/
+    .abt-door{
+        margin-top: 300px;
+        margin-bottom: 141px;
+        margin-right: 400px;
+        transform: scale(1.3);
+    } 
+    .abt-text{
+        font-size: 3rem;
+        margin-top: 20px;
+        margin-left: -1100px;
+    }
+    .abt-window{
+        transform: scale(1.3);
+    }
+    .abt-bike{
+        margin-left: 800px;
+        margin-bottom: -125px;
+        transform: scale(1.3);
     }
 }
