@@ -1,0 +1,534 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    -webkit-user-select: none;
+    user-select: none;
+}
+body{
+    background: url(/SRC/Index/1-BG.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*- Section -*/
+.section-sky{
+    width: 100%;
+    height: 100vh;  
+    position: relative;
+    transition: 0.3s ease;
+}
+.section-rooftop{
+    width: 100%;
+    height: auto;
+    position: relative;
+    transition: 0.3s ease;
+}
+.section-production, .section-sound, .section-aboutus{
+    width: 100%;
+    height: auto;  
+    position: relative;
+    margin-top: -10px;
+    background: #eb613e;
+    transition: 0.3s ease;
+}
+.section-graphic, .section-motion, .section-footer{
+    width: 100%;
+    height: auto;  
+    position: relative;
+    margin-top: -10px;
+    background: #282828;
+    transition: 0.3s ease;
+}
+/*- Section-1 -*/
+#bird{
+    position: absolute;
+    margin-top: 250px;
+    margin-left: -1250px;
+    height: auto;
+    overflow: hidden;
+    pointer-events: none;
+    transition: 0.3s ease;
+    transition: transform 0.2s ease-out;
+    z-index: 5;
+}
+#bird img{
+    transition: 0.3s ease;
+}
+.home-logo{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    z-index: 2;
+    transition: 0.3s ease;
+}
+.home-logo img{
+    width: auto;
+    height: auto;
+    transition: 0.3s ease;
+}
+.cloud-parent{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+.cloud-left,
+.cloud-right {
+    position: absolute;
+    transform: translateY(-50%);
+    transition: 0.3s ease;
+}
+.cloud-left img,
+.cloud-right img {
+    width: 100%;
+    height: auto;
+    transition: 0.3s ease;
+}
+.cloud-left{
+    text-align: start;
+    top: 30%;
+    left: 0;
+}
+.cloud-right{
+    text-align: end;
+    top: 60%;
+    right: 0;
+}
+
+/*-Section-Rooftop-*/
+.billboard{
+    position: relative;
+    margin-top: -125px;
+    margin-left: -10px;
+    z-index: 4;
+    transition: 0.3s ease;
+}
+.billboard-text{
+    position: absolute;
+    top: 18%;
+    left: 13%;
+    font-size: 5rem;
+}
+.search-input-border{
+    position: absolute;
+    top: 51%;
+    left: 13%;
+    padding: 10px;
+    padding-left: 90px;
+    width: 35%;
+    height: 12%;
+    border-radius: 20px;
+    font-size: 2.5rem;
+    background-color: white;
+    border: solid 2px #333;
+}
+#searchbar{
+    position: absolute;
+    top: -2%;
+    left: 10.75%;
+    padding: 15px 10px 10px 10px;
+    width: 80%;
+    outline: none;
+    background: none;
+    border: none;
+    font-size: 2.5rem;
+}
+#searchbutton{
+    position: absolute;
+    top: 21%;
+    left: 1.3%;
+    padding: 10px;
+    border: none;
+    background: none;
+    transform: scale(0.075);
+}
+#clearbutton{
+    position: absolute;
+    top: -13%;
+    left: 18.8%;
+    padding: 10px;
+    border: none;
+    background: none;
+    transform: scale(0.05);
+}
+.service-list-text{
+    position: absolute;
+    top: 65%;
+    left: 13%;
+    font-size: 2rem;
+}
+.service-button{
+    padding: 15px 30px 10px 30px;
+    outline: none;
+    border: solid 2px white;
+    border-radius: 50px;
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: underline;
+    background-color: #282828;
+    transition: 0.3s ease;
+}
+.service-button:hover{
+    transform: scale(1.05);
+}
+.product-service{
+    position: absolute;
+    top: 72%;
+    left: 13%;
+}
+.graphic-service{
+    position: absolute;
+    top: 72%;
+    left: 23.5%;
+}
+.sound-service{
+    position: absolute;
+    top: 72%;
+    left: 33%;
+}
+.illustration-service{
+    position: absolute;
+    top: 81%;
+    left: 13%;
+}
+.animation-service{
+    position: absolute;
+    top: 81%;
+    left: 23.5%;
+}
+.rooftop {   
+    position: absolute;
+    margin-top: 350px;
+    z-index: -1;
+    transition: 0.3s ease;
+}
+/*-Section-Production-*/
+.gap-production{
+    gap: 0rem;
+}
+.production-container{
+    margin-left: 195px;
+    margin-bottom: 100px;
+    transform: scale(0.9);
+    transition: 0.3s ease;
+}
+.pd-compressor{
+    margin-top: 185px;
+    margin-right: 50px;
+    transition: 0.3s ease;
+}
+.pd-text{
+    position: absolute;
+    font-size: 2rem;
+    color: white;
+    margin-top: 230px;
+    margin-left:170px;
+    cursor: pointer;
+    transition: 0.5s ease;
+    z-index: 10;
+}
+.pd-text:hover{
+    color: #b1b1b1;
+    transform: scale(1.05);
+}
+.pd-window-left, .pd-window-right{
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.pd-window-left{
+    margin-top: -5px;
+    margin-right: -200px;
+}
+/*-Section-Graphic-*/
+.graphic-container{
+    transition: 0.3s ease;
+}
+.gp-window{
+    margin-top: 200px;
+    margin-bottom: 170px;
+    margin-left: -40px;
+    transition: 0.3s ease;
+}
+.gp-window-left, .gp-window-middle, .gp-window-right{
+    transition: 0.3s ease;
+}
+.gap-graphic{
+    gap: 8rem;
+    transition: 0.3s ease;
+}
+.gp-text{
+    position: absolute;
+    text-align: center;
+    font-size: 1.8rem;
+    color: white;
+    margin-top: -195px;
+    margin-left: -1320px;
+    cursor: pointer;
+    transform: rotate(-6deg);
+    transition: 0.5s ease;
+}
+.gp-text:hover{
+    color: #b1b1b1;
+    transform: scale(1.05) rotate(-6deg);
+    transition: 0.3s ease;
+}
+.bird-pd-gp-container{
+    width: 100%;
+}
+/*-section-sound-*/
+.sound-container{
+    margin-left: 100px;
+    transition: 0.3s ease;
+}
+.sd-play-button{
+    position: absolute;
+    margin-top: -580px;
+    margin-left: -1120px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    z-index: 2;
+}
+.sd-play-button:hover{
+    transform: scale(1.05);
+}
+.sd-music{
+    display: none;
+}
+.sd-left-window{
+    margin-top: 150px;
+    margin-bottom: 150px;
+    transition: 0.3s ease;
+}
+.sd-right-window{
+    margin-top: -147px;
+    transform: scale(0.8);
+    transition: 0.3s ease;
+}
+.sd-text{
+    position: absolute;
+    text-align: center;
+    font-size: 1.7rem;
+    color: white;
+    margin-top: -405px;
+    margin-left: 160px;
+    cursor: pointer;
+    transform: rotate(-3.5deg);
+    transition: 0.5s ease;
+    z-index: 5;
+}
+.sd-text:hover{
+    color: #b1b1b1;
+    transform: scale(1.05) rotate(-3.5deg);
+    transition: 0.3s ease;
+}
+.sd-cat{
+    position: absolute;
+    transform: scale(0.8);
+    margin-left: 800px;
+    z-index: 4;
+    transition: 0.3s ease;
+}
+/*-section-motion-*/
+.motion-container{
+    margin-left: 100px;
+    transition: 0.3s ease;
+}
+.left-motion, .middle-motion, .right-motion{
+    margin-top: 200px;
+    margin-bottom: 200px;
+    transition: 0.3s ease;
+}
+.motion-eye{
+    position: absolute;
+    margin-left:-1500px;
+    margin-top: -250px;
+    transition: 0.3s ease;
+}
+.mt-text{
+    position: absolute;
+    text-align: center;
+    font-size: 1.8rem;
+    color: white;
+    margin-top: -395px;
+    margin-left: 1115px;
+    cursor: pointer;
+    transform: rotate(7.5deg);
+    transition: 0.5s ease;
+    z-index: 5;
+
+}
+.mt-text:hover{
+    color: #b1b1b1;
+    transform: scale(1.05) rotate(7.5deg);
+    transition: 0.3s ease;
+}
+.middle-motion{
+    margin-left: 50px;
+    margin-right: 130px;
+}
+/*-section-aboutus-*/
+.aboutus-container{
+    margin-left: 30px;
+    transition: 0.3s ease;
+}
+.abt-door{
+    margin-top: 200px;
+    margin-bottom: -0px;
+    margin-right: 200px;
+    transition: 0.3s ease;
+}
+.abt-bike{
+    position: absolute;
+    margin-top: 743.5px;
+    margin-left: 730px;
+    transition: 0.3s ease;
+}
+.abt-text{
+    position: absolute;
+    text-align: center;
+    font-size: 1.8rem;
+    color: #282828;
+    margin-top: 85px;
+    margin-left: -900px;
+    cursor: pointer;
+    transform: rotate(-5deg);
+    transition: 0.5s ease;
+    z-index: 5;
+}
+.abt-text:hover{
+    color: #131313;
+    transform: scale(1.05) rotate(-5deg);
+    transition: 0.3s ease;
+}
+/*-section-footer-*/
+.upper-column-container{
+    margin-top: 150px;
+    margin-bottom: 100px;
+    transition: 0.3s ease;
+}
+.gap-upper-footer{
+    gap: 15rem;
+    transition: 0.3s ease;
+}
+.footer-header{
+    position: relative;
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+    z-index: 2;
+}
+.footer-upper-column-text{
+    padding-left: 5px;
+    margin-bottom: 5px;
+    font-size: 1.3rem;
+    color: white;
+    cursor: pointer;
+}
+.footer-upper-column-blank{
+    padding-left: 5px;
+    margin-bottom: 5px;
+    font-size: 1.3rem;
+    color: #282828;
+    pointer-events: none;
+    cursor: none;
+}
+.upper-column-line{
+    width: 90%;
+    height: 2px;
+    background-color: white;
+    border-radius: 50px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+/*- Section-footer(down) -*/
+.down-footer-container{
+    padding: 0 90px 0 90px;
+    transition: 0.3s ease;
+}
+.inside-down-footer-container{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.footer-contact{
+    word-wrap: break-word;
+    width: 300px;
+}
+.footer-email{
+    position: absolute;
+    margin-top: -50px;
+    margin-left: 25px;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-color: #707070;
+    border: solid 2px #282828;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 1.5rem;
+    transform: rotate(-10deg);
+    transition: 0.3s ease;
+    z-index: 1;
+}
+.footer-email:hover{
+    font-size: 1.7rem;
+}
+.footer-hire-for-more{
+    position: absolute;
+    margin-top: -50px;
+    margin-left: 90px;
+    transform: scale(0.6);
+}
+.footer-hire-text{
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 60px;
+    font-size: 1.8rem;
+}
+.footer-tel{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 125px;
+    width: fit-content;
+    transform: scale(0.6);
+}
+.footer-tel-text{
+    position: absolute;
+    text-align: center;
+    font-size: 1.8rem;
+    text-decoration: underline;
+    background: none;
+    width: 260px;
+    border: none;
+    outline: none;
+    margin-top: 25px;
+    margin-left: 45px;
+    transition: 0.3s ease;
+    z-index: 2;
+}
+.gap-icon{
+    gap: 3rem;
+}
+.footer-zongzheng-inc{
+    margin-top: 20px;
+    color: white;
+    font-weight: lighter;
+    font-family: 2rem;
+    letter-spacing: 3px;
+}
+.footer-left-panel, .footer-right-panel{
+    transition: 0.3s ease;
+}
+

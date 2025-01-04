@@ -532,6 +532,8 @@ body{
     transition: 0.3s ease;
 }
 
+<<<<<<< HEAD
+=======
 @media(max-width:1600px){
     /*-section-sky-*/
     .cloud-left{
@@ -1743,3 +1745,4 @@ body{
         transform: scale(1.3);
     }
 }
+>>>>>>> 57cd7b998b0da9c00d2ad3566a94e9d074e95400

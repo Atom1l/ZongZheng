@@ -1,3 +1,1215 @@
 @media(max-width:1600px){
+<<<<<<< HEAD
+    /*-section-sky-*/
+    .cloud-left{
+        left: 0.5%;
+    }
+    /*-section-rooftop*/
+    .billboard{
+        margin-top: -135px;
+        margin-left: 100px;
+        transform: scale(0.9);
+    }
+    .rooftop {   
+        margin-top: 290px;
+        transform: scale(0.9);
+    }
+    /*-section-production*/
+    .production-container{
+        margin-left: 155px;
+        transform: scale(0.75);
+    }
+    /*-section-graphic*/
+    .graphic-container{
+        transform: scale(0.8);
+    }
+    .gp-window{
+        margin-top: 150px;
+        margin-bottom: 100px;
+    }
+    /*-section-sound-*/
+    .sound-container{
+        transform: scale(0.8);
+    }
+    .sd-left-window{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .sd-play-button{
+        margin-top: -580px;
+    }
+    .sd-right-window{
+        margin-top: -195px;
+    }
+    .sd-text{
+        margin-top: -450px;
+    }
+    /*-section-motion-*/
+    .motion-container{
+        transform: scale(0.8);
+    }
+    .left-motion, .middle-motion, .right-motion{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        transition: 0.3s ease;
+    }
+    /*-section-aboutus*/
+    .aboutus-container{
+        transform: scale(0.8);
+    }
+    .abt-text{
+        margin-bottom: -15px;
+    }
+    .abt-door,.abt-window{
+        margin-top: 100px;
+        margin-bottom: -115px;
+    }
+    .abt-bike{
+        margin-bottom: -16px; 
+    }
+    /*-section-first-footer*/
+    .upper-column-container{
+        transform: scale(0.9);
+    }
+    
+}
+@media(max-width:1470px){
+    /*-section-production*/
+    .production-container{
+        margin-left: 155px;
+        transform: scale(0.7);
+    }
+    .pd-window-left{
+        margin-left: -60px;
+        margin-right: -220px;
+    }
+    /*-section-graphic*/
+    .graphic-container{
+        transform: scale(0.7);
+    }
+    /*-section-sound-*/
+    .sound-container{
+        transform: scale(0.75);
+    }
+    /*-section-motion-*/
+    .motion-container{
+        transform: scale(0.75);
+    }
+    .left-motion, .middle-motion, .right-motion{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        transition: 0.3s ease;
+    } 
+    /*-section-aboutus*/
+    .aboutus-container{
+        transform: scale(0.75);
+    }
+    .abt-text{
+        margin-bottom: 15px;
+    }
+    .abt-door,.abt-window{
+        margin-top: 50px;
+        margin-bottom: -141px;
+    }
+    .abt-bike{
+        margin-bottom: 7px; 
+    }
+    
+}
+
+@media(max-width:1400px){
+    /*-section-sky-*/
+    #bird img{
+        transform: scale(0.9);
+    }
+    .home-logo img{
+        transform: scale(0.9);
+    }
+    .cloud-left img,
+    .cloud-right img{
+        width: 80%;
+    }
+    /*-section-rooftop*/
+    .billboard{
+        margin-top: -155px;
+        margin-left: 140px;
+        transform: scale(0.8);
+    }
+    .rooftop {   
+        margin-top: 225px;
+        transform: scale(0.8);
+    }
+    /*-section-production*/
+    .section-production{
+        margin-top: -15px;
+    }
+}
+@media(max-width:1330px){
+    /*-section-production*/
+    .production-container{
+        margin-left: 145px;
+        transform: scale(0.65);
+    }
+    .pd-window-left{
+        margin-left: -60px;
+        margin-right: -220px;
+    }
+    /*-section-motion-*/
+    .motion-container{
+        transform: scale(0.7);
+    }
+    .left-motion, .middle-motion, .right-motion{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        transition: 0.3s ease;
+    }
+    /*-section-aboutus*/
+    .aboutus-container{
+        transform: scale(0.7);
+    }
+    .abt-text{
+        margin-bottom: 30px;
+    }
+    .abt-door,.abt-window{
+        margin-top: 0px;
+        margin-bottom: -165px;
+    }
+    .abt-bike{
+        margin-bottom: 33px; 
+    }
+}
+
+@media(max-width:1230px){
+    #bird img{
+        transform: scale(0.8);
+    }
+    /*-section-production*/
+    .production-container{
+        margin-left: 135px;
+        margin-bottom: 50px;
+        transform: scale(0.6);
+    }
+    .pd-window-left{
+        margin-left: -60px;
+        margin-right: -220px;
+    }
+    /*-section-graphic*/
+    .graphic-container{
+        transform: scale(0.7);
+    }
+    .gp-window{
+        margin-top: 150px;
+        margin-bottom: 100px;
+    }
+    .gap-graphic{
+        gap: 4rem;
+    }
+    .gp-text{
+        margin-top: -195px;
+        margin-left: -1230px;
+    }
+    /*-section-sound-*/
+    .sound-container{
+        transform: scale(0.7);
+    }
+    /*-section-motion-*/
+    .motion-container{
+        transform: scale(0.6);
+    }
+    .left-motion, .middle-motion, .right-motion{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        transition: 0.3s ease;
+    }
+    /*-section-aboutus*/
+    .aboutus-container{
+        transform: scale(0.65);
+    }
+    .abt-text{
+        margin-bottom: 55px;
+    }
+    .abt-door,.abt-window{
+        margin-top: -50px;
+        margin-bottom: -188px;
+    }
+    .abt-bike{
+        margin-bottom: 60px; 
+    }
+    /*-section-first-footer*/
+    .upper-column-container{
+        transform: scale(0.8);
+    }
+    .gap-upper-footer{
+        gap: 10rem;
+    }
+    /*-section-second-footer-*/
+    .down-footer-container{
+        padding: 0px;
+        transform: scale(0.8);
+    }
+}
+
+
+@media(max-width:1130px){
+    /*-section-production*/
+    .production-container{
+        margin-left: 120px;
+        transform: scale(0.55);
+    }
+    .pd-window-left{
+        margin-left: -60px;
+        margin-right: -220px;
+    }
+    /*-section-graphic*/
+    .graphic-container{
+        transform: scale(0.6);
+    }
+    .gp-window{
+        margin-top: 150px;
+        margin-bottom: 100px;
+    }
+    .gap-graphic{
+        gap: 5rem;
+    }
+    .gp-text{
+        margin-top: -195px;
+        margin-left: -1230px;
+    }
+    /*-section-sound-*/
+    .sound-container{
+        transform: scale(0.65);
+    }
+}
+
+@media(max-width:1100px){
+    /*-section-sky-*/
+    #bird img{
+        transform: scale(0.7);
+    }
+    .home-logo img{
+        transform: scale(0.8);
+    }
+    .cloud-left img,
+    .cloud-right img{
+        width: 60%;
+    }
+    /*-section-rooftop*/
+    .billboard{
+        margin-top: -185px;
+        margin-left: 150px;
+        transform: scale(0.7);
+    }
+    .rooftop {   
+        margin-top: 145px;
+        transform: scale(0.7);
+    }
+    /*-section-production*/
+    .section-production{
+        margin-top: -95px;
+    }
+    /*-section-graphic*/
+    .gp-window{
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+    /*-section-motion-*/
+    .motion-container{
+        transform: scale(0.55);
+    }
+    .left-motion, .middle-motion, .right-motion{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        transition: 0.3s ease;
+    }
+}
+
+@media(max-width:1030px){
+    #bird img{
+        transform: scale(1);
+    }
+    .production-container{
+        display: flex;
+        flex-direction: column !important;
+    }
+    .production-container{
+        margin-left: 0px;
+        transform: scale(1);
+    }
+    .pd-compressor, .pd-window-left, .pd-window-right{
+        margin-bottom: 100px;
+    }
+    .pd-compressor{
+        margin-top: 100px;
+        margin-right: 0px;
+    }
+    .pd-text{
+        font-size: 2rem;
+        margin-top: 145px;
+    }
+    .pd-window-left{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    /*-section-graphic*/
+    .graphic-container{
+        transform: scale(1);
+    }
+    .gp-window{
+        display: flex;
+        flex-direction: column !important;
+        margin-top: 200px;
+        margin-bottom: 150px;
+        margin-left: 0px;
+    }
+    .gp-window-left, .gp-window-middle{
+        margin-bottom: 50px;
+    }
+    .gp-window-left{
+        margin-left: -50px;
+    }
+    .gp-text{
+        margin-top: -1560px;
+        margin-left: -190px;
+    }
+    /*-section-sound*/
+    .sound-container{
+        transform: scale(1);
+    }
+    .sound-container{
+        display: flex;
+        flex-direction: column !important;
+        margin-left: 0px;
+    }
+    .sd-left-window{
+        margin-top: 200px;
+        margin-bottom: 200px;
+    }
+    .sd-right-window{
+        margin-bottom: 80px;
+        margin-left:-20px;
+    }
+    .sd-play-button{
+        margin-top: -1115px;
+        margin-left: -365px;
+    }
+    .sd-text{
+        margin-top: 575px;
+        margin-left: -380px;
+    }
+    .sd-cat{
+        transform: scale(0.8);
+        margin-top: 1000px;
+        margin-left: 300px;
+    }
+    /*-section-motion-*/
+    .motion-container{
+        display: flex;
+        flex-direction: column !important;
+        margin-left: 0;
+        transform: scale(1);
+    }
+    .motion-eye{
+        margin-left: -350px;
+        margin-top: -1900px;
+    }
+    .mt-text{
+        margin-left: 175px;
+        margin-top: 1285px;
+    }
+    .left-motion{
+        margin-top: 150px;
+        transition: 0.3s ease;
+    }
+    .middle-motion{
+        margin-left: -77px;
+        margin-right: 0px;
+    }
+    .left-motion, .middle-motion{
+        margin-bottom: 100px;
+    }
+    .right-motion{
+        margin-left: 100px;
+        margin-bottom: 150px;
+    }
+    /*-section-aboutus*/
+    .aboutus-container{
+        display: flex;
+        flex-direction: column !important;
+        margin-left:0;
+        transform: scale(1);
+    }
+    .abt-text{
+        margin-top: 135px;
+        margin-left: 00px;
+    }
+    .abt-door{
+        margin-top: 200px;
+        margin-bottom: 0px;
+        margin-right: 0;
+    }
+    .abt-window{
+        display: none;
+    }
+    .abt-bike{
+        display: none;
+    }
+    /*-section-first-footer*/
+    .upper-column-container{
+        transform: scale(0.8);
+    }
+    .gap-upper-footer{
+        gap: 5rem;
+    }  
+    /*-section-second-footer-*/
+    .down-footer-container{
+        padding: 0px;
+        transform: scale(0.8);
+        margin-left: -65px;
+        margin-right: -65px;
+    }
+}
+
+@media(max-width:870px){
+    #bird img{
+        transform: scale(0.8);
+    }
+    /*-section-sky-*/
+    .cloud-left img,
+    .cloud-right img{
+        width: 60%;
+    }
+    .cloud-left{
+        top: 23%;
+        left: 3%;
+    }
+    .cloud-right{
+        top: 70%;
+        right: 3%;
+    }
+    /*-section-rooftop*/
+    .billboard{
+        margin-top: -215px;
+        margin-left: 180px;
+        transform: scale(0.6);
+    }
+    .rooftop {   
+        margin-top: 70px;
+        transform: scale(0.6);
+    }
+    /*-section-production*/
+    .section-production{
+        margin-top: -175px;
+    }
+    .production-container{
+        margin-left: 0px;
+        transform: scale(0.8);
+    }
+    .pd-compressor, .pd-window-left, .pd-window-right{
+        margin-bottom: 50px;
+    }
+    .pd-compressor{
+        margin-top: 0px;
+        margin-right: 0px;
+    }
+    .pd-text{
+        font-size: 2rem;
+        margin-top: 45px;
+    }
+    .pd-window-right{
+        margin-bottom: -50px;
+    }
+    /*-Section-graphic-*/
+    .graphic-container{
+        transform: scale(0.8);
+    }
+    .gp-window{
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    /*-section-sound*/
+    .sound-container{
+        transform: scale(0.8);
+    }
+    .sd-left-window{
+        margin-top: 0px;
+    }
+    .sd-play-button{
+        margin-top: -1235px;
+    }
+    .sd-right-window{
+        margin-bottom: 0px;
+    }
+    .sd-text{
+        margin-top: 460px;
+    }
+    .sd-cat{
+        transform: scale(0.8);
+        margin-top: 900px;
+    }
+    /*-section-motion-*/
+    .motion-container{
+        transform: scale(0.8);
+    }
+    .left-motion{
+        margin-top: -100px;
+    }
+    .right-motion{
+        margin-bottom:-100px;
+    }
+    /*-section-aboutus*/
+    .aboutus-container{
+        display: flex;
+        flex-direction: column !important;
+        margin-left:0;
+        transform: scale(0.8);
+    }
+    .abt-text{
+        margin-top: 150px;
+        margin-left: 00px;
+    }
+    .abt-door{
+        margin-top: 100px;
+        margin-bottom: -115px;
+    } 
+    /*-section-second-footer-*/
+    .down-footer-container{
+        padding: 0px;
+        transform: scale(0.7);
+        margin-left: -120px;
+        margin-right: -120px;
+    }
+    .inside-down-footer-container{
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+}
+
+@media(max-width:780px){
+    #bird img{
+        transform: scale(0.7);
+    }
+    /*-section-first-footer*/
+    .upper-column{
+        display: flex;
+        flex-direction: column !important;
+    }
+    .upper-column-container{
+        align-items: center !important;
+        transform: scale(1);
+        word-wrap: break-word;
+        white-space: nowrap;
+        margin-bottom: 0px;
+    }
+    .gap-upper-footer{
+        gap: 0px;
+    }
+    /*-Section-below-footer-*/
+    .inside-down-footer-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        margin-left: 50px;
+    }
+    .footer-left-panel{
+        margin-left: -135px;
+    }
+    .footer-contact{
+        width: 300px;
+        margin-bottom: 60px;
+        margin-left: 150px;
+    }
+    .footer-right-panel{
+        text-align: center !important;
+        margin-top: 150px;
+    }
+}
+
+@media(max-width:700px){
+    /*-section-sky-*/
+    #bird img{
+        transform: scale(0.6);
+    }
+    .cloud-left{
+        top: 20%;
+    }
+    .cloud-right{
+        top: 77%;
+    }
+    /*-section-rooftop*/
+    .billboard{
+        margin-top: -245px;
+        margin-left: 180px;
+        transform: scale(0.5);
+    }
+    .rooftop {   
+        margin-top: -10px;
+        transform: scale(0.5);
+    }
+    /*-section-production*/
+    .production-container{
+        margin-left: 0px;
+        transform: scale(0.6);
+    }
+    .pd-compressor, .pd-window-left, .pd-window-right{
+        margin-bottom: 50px;
+    }
+    .pd-compressor{
+        margin-top: -300px;
+        margin-right: 0px;
+    }
+    .pd-text{
+        font-size: 2rem;
+        margin-top: -255px;
+    }
+    .pd-window-right{
+        margin-bottom: -300px;
+    }
+    /*-Section-graphic-*/
+    .graphic-container{
+        transform: scale(0.6);
+    }
+    .gp-window{
+        margin-top: -250px;
+        margin-bottom: -250px;
+    }
+    /*-section-sound*/
+    .sound-container{
+        transform: scale(0.6);
+    }
+    .sd-left-window{
+        margin-top: -200px;
+    }
+    .sd-play-button{
+        margin-top: -1160px;
+    }
+    .sd-right-window{
+        margin-bottom: -270px;
+    }
+    .sd-text{
+        margin-top: 525px;
+    }
+    /*-section-motion-*/
+    .motion-container{
+        transform: scale(0.6);
+    }
+    .left-motion{
+        margin-top: -350px;
+    }
+    .right-motion{
+        margin-bottom:-350px;
+    }
+    /*-section-aboutus*/
+    .aboutus-container{
+        display: flex;
+        flex-direction: column !important;
+        margin-left:0;
+        transform: scale(0.6);
+    }
+    .abt-text{
+        margin-top: 50px;
+        margin-left: 00px;
+    }
+    .abt-door{
+        margin-top: -100px;
+        margin-bottom: -209px;
+    } 
+}
+@media(max-width:575.98px){
+    #bird img{
+        transform: scale(0.5);
+    }
+    /*-section-rooftop*/
+    .billboard{
+        margin-top: -245px;
+        margin-left: 180px;
+        transform: scale(0.4);
+    }
+    .rooftop {   
+        margin-top: -57px;
+        transform: scale(0.4);
+    }
+    /*-section-production*/
+    .production-container{
+        margin-left: 0px;
+        transform: scale(0.5);
+    }
+    .pd-compressor, .pd-window-left, .pd-window-right{
+        margin-bottom: 50px;
+    }
+    .pd-compressor{
+        margin-top: -400px;
+        margin-right: 0px;
+    }
+    .pd-text{
+        font-size: 2rem;
+        margin-top: -355px;
+    }
+    .pd-window-right{
+        margin-bottom: -400px;
+    }
+    /*-Section-graphic-*/
+    .graphic-container{
+        transform: scale(0.5);
+    }
+    .gp-window{
+        margin-top: -350px;
+        margin-bottom: -350px;
+    }
+    /*-section-sound*/
+    .sound-container{
+        transform: scale(0.5);
+    }
+    .sd-left-window{
+        margin-top: -250px;
+    }
+    .sd-play-button{
+        margin-top: -1160px;
+    }
+    .sd-right-window{
+        margin-bottom: -320px;
+    }
+    .sd-text{
+        margin-top: 525px;
+    }
+    /*-section-motion-*/
+    .motion-container{
+        transform: scale(0.5);
+    }
+    .left-motion{
+        margin-top: -500px;
+    }
+    .right-motion{
+        margin-bottom:-500px;
+    }
+    /*-section-aboutus*/
+    .aboutus-container{
+        display: flex;
+        flex-direction: column !important;
+        margin-left:0;
+        transform: scale(0.5);
+    }
+    .abt-text{
+        margin-top: 100px;
+        margin-left: 00px;
+    }
+    .abt-door{
+        margin-top: -120px;
+        margin-bottom: -272px;
+    } 
+    
+}
+@media(max-width:485px){
+    /*-section-sky-*/
+    #bird img{
+        transform: scale(0.4);
+    }
+    .cloud-left{
+        left: 0%;
+    }
+    .cloud-right{
+        right: 0%;
+    }
+    /*-section-rooftop*/
+    .billboard{
+        margin-top: -285px;
+        margin-left: 160px;
+        transform: scale(0.35);
+    }
+    .rooftop {   
+        margin-top: -120px;
+        transform: scale(0.35);
+    }
+    /*-section-production*/
+    .section-production{
+        margin-top: -200px;
+    }
+    .production-container{
+        margin-left: 0px;
+        transform: scale(0.45);
+    }
+    .pd-compressor, .pd-window-left, .pd-window-right{
+        margin-bottom: 50px;
+    }
+    .pd-compressor{
+        margin-top: -450px;
+        margin-right: 0px;
+    }
+    .pd-text{
+        font-size: 2rem;
+        margin-top: -405px;
+    }
+    .pd-window-right{
+        margin-bottom: -450px;
+    }
+    /*-Section-graphic-*/
+    .graphic-container{
+        transform: scale(0.45);
+    }
+    .gp-window{
+        margin-top: -400px;
+        margin-bottom: -400px;
+    }
+    /*-section-sound*/
+    .sound-container{
+        transform: scale(0.45);
+    }
+    .sd-left-window{
+        margin-top: -300px;
+    }
+    .sd-play-button{
+        margin-top: -1210px;
+    }
+    .sd-right-window{
+        margin-bottom: -325px;
+    }
+    .sd-text{
+        margin-top: 480px;
+    }
+    /*-section-motion-*/
+    .motion-container{
+        transform: scale(0.45);
+    }
+    .left-motion{
+        margin-top: -550px;
+    }
+    .right-motion{
+        margin-bottom:-550px;
+    }
+    /*-section-aboutus*/
+    .aboutus-container{
+        display: flex;
+        flex-direction: column !important;
+        margin-left:0;
+        transform: scale(0.45);
+    }
+    .abt-text{
+        margin-top: 100px;
+        margin-left: 00px;
+    }
+    .abt-door{
+        margin-top: -150px;
+        margin-bottom: -298px;
+    } 
+}
+@media(max-width:375px){
+    /*-section-sky-*/
+    .home-logo img{
+        transform: scale(0.7);
+    }
+    .cloud-left{
+        left: -10%;
+    }
+    .cloud-right{
+        right: -10%;
+    }
+    /*-section-rooftop*/
+    .billboard{
+        margin-top: -295px;
+        margin-left: 140px;
+        transform: scale(0.3);
+    }
+    .rooftop {   
+        margin-top: -155px;
+        transform: scale(0.3);
+    }
+    /*-section-production*/
+    .section-production{
+        margin-top: -220px;
+    }
+    .production-container{
+        margin-left: 0px;
+        transform: scale(0.4);
+    }
+    .pd-compressor, .pd-window-left, .pd-window-right{
+        margin-bottom: 50px;
+    }
+    .pd-compressor{
+        margin-top: -525px;
+        margin-right: 0px;
+    }
+    .pd-text{
+        font-size: 2rem;
+        margin-top: -485px;
+    }
+    .pd-window-right{
+        margin-bottom: -500px;
+    }
+    /*-Section-graphic-*/
+    .graphic-container{
+        transform: scale(0.4);
+    }
+    .gp-window{
+        margin-top: -450px;
+        margin-bottom: -450px;
+    }
+    /*-section-sound*/
+    .sound-container{
+        transform: scale(0.4);
+    }
+    .sd-left-window{
+        margin-top: -350px;
+    }
+    .sd-play-button{
+        margin-top: -1210px;
+    }
+    .sd-right-window{
+        margin-bottom: -370px;
+    }
+    .sd-text{
+        margin-top: 480px;
+    }
+    /*-section-motion-*/
+    .motion-container{
+        transform: scale(0.4);
+    }
+    .left-motion{
+        margin-top: -650px;
+    }
+    .right-motion{
+        margin-bottom:-650px;
+    }
+    /*-section-second-footer-*/
+    .down-footer-container{
+        transform: scale(0.5);
+    }
+    .inside-down-footer-container{
+        margin-top: -100px;
+        margin-bottom: -50px;
+    }
+}
+@media(max-width:310px){
+    /*-section-sky-*/
+    #bird img{
+        transform: scale(0.3);
+    }
+    .home-logo img{
+        transform: scale(0.5);
+    }
+    .cloud-left{
+        top: 30%;
+    }
+    .cloud-right{
+        top: 70%;
+    }
+    /*-section-rooftop*/
+    .billboard{
+        margin-top: -305px;
+        margin-left: 100px;
+        transform: scale(0.25);
+    }
+    .rooftop {   
+        margin-top: -190px;
+        transform: scale(0.25);
+    }
+    /*-section-production*/
+    .section-production{
+        margin-top: -325px;
+    }
+    .production-container{
+        margin-left: 0px;
+        transform: scale(0.3);
+    }
+    .pd-compressor, .pd-window-left, .pd-window-right{
+        margin-bottom: 150px;
+    }
+    .pd-compressor{
+        margin-top: -525px;
+        margin-right: 0px;
+    }
+    .pd-text{
+        font-size: 2rem;
+        margin-top: -485px;
+    }
+    .pd-window-right{
+        margin-bottom: -750px;
+    }
+    /*-Section-graphic-*/
+    .graphic-container{
+        transform: scale(0.3);
+    }
+    .gp-window{
+        margin-top: -300px;
+        margin-bottom: -600px;
+    }
+    /*-section-sound*/
+    .sound-container{
+        transform: scale(0.3);
+    }
+    .sd-left-window{
+        margin-top: -400px;
+    }
+    .sd-play-button{
+        margin-top: -1160px;
+    }
+    .sd-right-window{
+        margin-bottom: -475px;
+    }
+    .sd-text{
+        margin-top: 530px;
+    }
+    /*-section-motion-*/
+    .motion-container{
+        transform: scale(0.3);
+    }
+    .left-motion{
+        margin-top: -800px;
+    }
+    .right-motion{
+        margin-bottom:-800px;
+    }
+    /*-section-aboutus*/
+    .aboutus-container{
+        display: flex;
+        flex-direction: column !important;
+        margin-left:0;
+        transform: scale(0.4);
+    }
+    .abt-text{
+        margin-top: 125px;
+        margin-left: 00px;
+    }
+    .abt-door{
+        margin-top: -150px;
+        margin-bottom: -337px;
+    } 
+}
+@media(min-width:1921px){
+    /*-section-sky-*/
+    #bird img{
+        transform: scale(1.52);
+    }
+    .cloud-left img,
+    .cloud-right img{
+        transform: scale(1.52);
+    }
+    .cloud-left{
+        left: 10%;
+    }
+    .cloud-right{
+        right: 10%;
+    }
+    /*-section-rooftop*/
+    .billboard{
+        margin-top: -50px;
+        margin-left: -150px;
+        transform: scale(1.3);
+        transition: 0.3s ease;
+    }
+    .rooftop{
+        width: 100%;
+        margin-top: 490px;
+    }
+    .rooftop img{
+        width: 100%;
+    }
+    /*-section-production*/
+    .section-production{
+        margin-top: 150px;
+    }
+    .production-container{
+        transform: scale(1.3);
+        margin-top: 300px;
+        margin-bottom: 400px;
+        margin-left: 280px;
+    }
+    /*-Section-graphic-*/
+    .graphic-container{
+        transform: scale(1.3);
+        margin-bottom: 190px;
+    }
+    .gp-window{
+        margin-top: 400px;
+        margin-bottom: 300px;
+    }
+    /*-section-sound-*/
+    .sound-container{
+        margin-top: 0px;
+        margin-left: 100px;
+        transition: 0.3s ease;
+    }
+    .sd-play-button{
+        position: absolute;
+        margin-top: -680px;
+        margin-left: -1480px;
+        cursor: pointer;
+        transition: 0.3s ease;
+        z-index: 2;
+    }
+    .sd-music{
+        display: none;
+    }
+    .sd-left-window{
+        margin-top: 420px;
+        margin-bottom: 350px;
+        transform: scale(1.3);
+        transition: 0.3s ease;
+    }
+    .sd-right-window{
+        margin-top: -145px;
+        margin-left: 250px;
+        margin-bottom: 0px;
+        transform: scale(1.1);
+        transition: 0.3s ease;
+    }
+    .sd-text{
+        position: absolute;
+        text-align: center;
+        font-size: 2.2rem;
+        color: white;
+        margin-top: -500px;
+        margin-left: 270px;
+        cursor: pointer;
+        transform: rotate(-3.5deg);
+        transition: 0.5s ease;
+        z-index: 2;
+    }
+    .sd-cat{
+        margin-top: 150px;
+        margin-left: 1200px;
+    }
+    /*-section-motion-*/
+    .motion-eye{
+        margin-left: -1600px;
+        z-index: 5;
+    }
+    .mt-text{
+        font-size: 2.5rem;
+        margin-left: 1550px;
+        margin-top: -525px;
+        z-index: 5;
+    }
+    .left-motion, .middle-motion, .right-motion{
+        margin-top: 400px;
+        margin-bottom: 400px;
+        transform: scale(1.3);
+    }
+    .middle-motion{
+        margin-left: 250px;
+        margin-right: 350px;
+    }
+    /*-section-aboutus*/
+    .abt-door{
+        margin-top: 300px;
+        margin-bottom: 141px;
+        margin-right: 400px;
+        transform: scale(1.3);
+    } 
+    .abt-text{
+        font-size: 3rem;
+        margin-top: 20px;
+        margin-left: -1100px;
+    }
+    .abt-window{
+        transform: scale(1.3);
+    }
+    .abt-bike{
+        margin-left: 800px;
+        margin-bottom: -125px;
+        transform: scale(1.3);
+    }
+=======
     .section
+>>>>>>> 57cd7b998b0da9c00d2ad3566a94e9d074e95400
 }

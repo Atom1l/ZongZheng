@@ -16,8 +16,8 @@
     <link rel="stylesheet" href="/CSS/Nav-Fonts/Fonts.css"> <!-- Font CSS -->
     <!-- CSS -->
     <link rel="stylesheet" href="/CSS/Nav-Fonts/Navbar.css"> <!-- Navbar CSS -->
-    <link rel="stylesheet" href="/CSS/Index/Index.css"> <!-- Index CSS -->
-    <link rel="stylesheet" href="/CSS/Index/Indexresponsive.css"> <!-- Index Responsive CSS -->
+    <link rel="stylesheet" href="/CSS/Index/TH-Index.css"> <!-- Index CSS -->
+    <link rel="stylesheet" href="/CSS/Index/TH-Indexresponsive.css"> <!-- Index Responsive CSS -->
 
     <!-- Navbar -->
     <nav class="navbar fixed-top" id="navbar">
@@ -30,8 +30,8 @@
             <!-- Language Icon and Collapse Button on the Right -->
             <div class="d-flex align-items-center">
                 <!-- Language Icon -->
-                <a class="navbar-language" href="/TH-Index.html">
-                    <img src="/SRC/Index/1-LANGUAGE-ENG.png" alt="language">
+                <a class="navbar-language" href="/Index.html">
+                    <img src="/SRC/Index/1-LANGUAGE-TH.png" alt="language">
                 </a>
     
                 <!-- Collapse Button -->
@@ -45,16 +45,16 @@
             <div class="navbar-collapse collapse justify-content-end">
                 <ul class="navbar-nav text-end pe-2 mt-3">
                     <li class="nav-item">
-                        <a class="nav-link fs-5 text-white text-decoration-none" href="#">Home</a>
+                        <a class="nav-link fs-5 text-white text-decoration-none" href="#">หน้าหลัก</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fs-5 text-white text-decoration-underline" href="#">About us</a>
+                        <a class="nav-link fs-5 text-white text-decoration-underline" href="#">เกี่ยวกับเรา</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fs-5 text-white text-decoration-underline" href="#">Work</a>
+                        <a class="nav-link fs-5 text-white text-decoration-underline" href="#">ผลงาน</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fs-5 text-white text-decoration-underline" href="#">Contact</a>
+                        <a class="nav-link fs-5 text-white text-decoration-underline" href="#">ช่องทางติดต่อ</a>
                     </li>
                 </ul>
             </div>
@@ -67,7 +67,7 @@
 <body>
     <!-- Section-Sky -->
     <section class="section-sky d-flex justify-content-center align-items-center" id="Index">
-        <div class="home-logo" id="home-logo"><img src="SRC/Index/1-HOME-TEXT1.png" alt="Home-logo"></div> <!-- Logo -->
+        <div class="home-logo" id="home-logo"><img src="SRC/Index/1-HOME-TEXT-TH.png" alt="Home-logo"></div> <!-- Logo -->
         <div class="cloud-parent"> <!-- Cloud -->
             <div class="cloud-left" id="cloud_left"><img src="SRC/Index/1-CLOUD1.png" alt="cloud-left"></div>
             <div class="cloud-right" id="cloud_right"><img src="SRC/Index/1-CLOUD1.png" alt="cloud-right"></div>
@@ -79,7 +79,7 @@
         <div class="rooftop-parent d-flex flex-column justify-content-center align-items-center">
             <div class="billboard">
                 <img src="/SRC/Index/2-SEARCH-BG.png" alt="billboard">
-                <div class="billboard-text">Select the right<br>Freelance services.</div>
+                <div class="billboard-text">เลือกประเภทงาน<br>ที่คุณต้องการ</div>
                 <div>
                     <div class="search-input-border">
                         <input type="text" name="searchbar" id="searchbar" title="Searchbar" placeholder="">
@@ -94,24 +94,20 @@
                     <div class="button-service-list">
                         <!--Top-row-services-->
                         <button class="service-button product-service" id="product-service-btn" type="button" title="Production"
-                        onclick="document.getElementById('searchbar').value = 'Production'">PRODUCTION</button> <!-- Production-Service -->
+                        onclick="document.getElementById('searchbar').value = 'โปรดักชั่น'">โปรดักชั่น</button> <!-- Production-Service -->
 
                         <button class="service-button graphic-service" id="graphic-service-btn" type="button" title="Graphic"
-                        onclick="document.getElementById('searchbar').value = 'Graphic'">GRAPHIC</button> <!-- Graphic-Service -->
+                        onclick="document.getElementById('searchbar').value = 'กราฟิก'">กราฟิก</button> <!-- Graphic-Service -->
 
                         <button class="service-button sound-service" id="sound-service-btn" type="button" title="Sound"
-                        onclick="document.getElementById('searchbar').value = 'Sound'">SOUND</button> <!-- Sound-Service -->
+                        onclick="document.getElementById('searchbar').value = 'เสียง'">เสียง</button> <!-- Sound-Service -->
 
                         <!--Bottom-row-services-->
                         <button class="service-button illustration-service" id="illustration-service-btn" type="button" title="Illustration"
-                        onclick="document.getElementById('searchbar').value = 'Illustration'">ILLUSTRATION</button> <!-- Illustration-Service -->
+                        onclick="document.getElementById('searchbar').value = 'ภาพประกอบ'">ภาพประกอบ</button> <!-- Illustration-Service -->
                         
                         <button class="service-button animation-service" id="animation-service-btn" type="button" title="Animation"
-<<<<<<< HEAD
-                        onclick="document.getElementById('searchbar').value = 'animation/motion'">ANIMATION / MOTION</button> <!-- Animation-Service -->
-=======
-                        onclick="document.getElementById('searchbar').value = 'Animation'">ANIMATION</button> <!-- Animation-Service -->
->>>>>>> 57cd7b998b0da9c00d2ad3566a94e9d074e95400
+                        onclick="document.getElementById('searchbar').value = 'แอนิเมชั่น / โมชั่นกราฟิก'">แอนิเมชั่น / โมชั่นกราฟิก</button> <!-- Animation-Service -->
                     </div>
                 </div>
             </div>
@@ -122,11 +118,7 @@
     <section class="section-production d-flex flex-column justify-content-center align-items-center">
         <div class="production-container d-flex flex-row justify-content-center align-items-center gap-production">
             <div class="pd-compressor-with-text">
-<<<<<<< HEAD
-                <a class="pd-text" href="/Production.html">Production</a>
-=======
-                <a class="pd-text">Production</a>
->>>>>>> 57cd7b998b0da9c00d2ad3566a94e9d074e95400
+                <a class="pd-text">โปรดักชั่น</a>
                 <div class="pd-compressor"><img src="SRC/Index/Compresser.png" alt="compresser"></div>
             </div>
             <div class="pd-window-left">
@@ -143,11 +135,7 @@
     <section class="section-graphic d-flex flex-column justify-content-center align-items-center">
         <div class="graphic-container">
             <div class="gp-window d-flex flex-row justify-content-center align-items-center gap-graphic">
-<<<<<<< HEAD
-                <a class="gp-text">Graphic /<br>Illustration</a>
-=======
-                <a class="gp-text">Graphic/<br>Illustration</a>
->>>>>>> 57cd7b998b0da9c00d2ad3566a94e9d074e95400
+                <a class="gp-text">งานกราฟิก /<br>ภาพประกอบ</a>
                 <img class="gp-window-left" src="SRC/Index/gp-window-1.gif" alt="graphic-window-left">
                 <img class="gp-window-middle" src="SRC/Index/gp-window-2.gif" alt="graphic-window-middle">
                 <img class="gp-window-right" src="SRC/Index/gp-window-3.gif" alt="graphic-window-right">
@@ -160,7 +148,7 @@
             <div class="sd-music"><audio src="/SRC/Index/Mantongtonn.m4a" id="sound-music" controls></audio></div>
             <div class="sd-play-button"><img src="SRC/Index/PLAY-BUTTON-SOUND.png" id="play-button" alt="toggle-sound-button"></div>
             <div class="sd-left-window"><img src="SRC/Index/SOUND-STUDIO.png" alt="sound-studio-window"></div>
-            <a class="sd-text">Sound Studio</a>
+            <a class="sd-text">สตูดิโอเสียง</a>
             <div class="sd-cat"><img src="SRC/Index/CAT-GIF-2.gif" alt="cat"></div>
             <div class="sd-right-window"><img src="src/Index/6-SOUND-WINDOW.png" alt="sound-side-window"></div>
         </div>
@@ -169,7 +157,7 @@
     <section class="section-motion">
         <div class="motion-container d-flex flex-row justify-content-center align-items-center gap-motion">
             <div class="motion-eye"><img src="src/Index/eye-move.gif" alt="eye"></div>
-            <a class="mt-text">Animation/Motion</a>
+            <a class="mt-text">แอนิเมชั่น / โมชั่นกราฟิก</a>
             <div class="left-motion"><img src="SRC/Index/motion-window1.gif" alt="motionwindow-left"></div>
             <div class="middle-motion"><img src="/SRC/Index/motion-window2.gif" alt="motionwindow-middle"></div>
             <div class="right-motion"><img src="SRC/Index/motion-window3.gif" alt="motionwindow-right"></div>
@@ -178,7 +166,7 @@
     <!--Section-aboutus-->
     <section class="section-aboutus">
         <div class="aboutus-container d-flex flex-row justify-content-center align-items-center">
-            <a class="abt-text">About Us</a>
+            <a class="abt-text">ทีมงานทรงเชง</a>
             <div class="abt-door"><img src="/SRC/Index/9-ABOUT-US-DOOR.png" alt="door"></div>
             <div class="abt-window"><img src="SRC/Index/9-WINDOW.png" alt="window"></div>
             <div class="abt-bike"><img src="SRC/Index/9-BIKE.png" alt="bike"></div>
@@ -188,26 +176,22 @@
     <section class="section-footer">
         <div class="upper-column d-flex flex-row justify-content-center align-items-center gap-upper-footer">
             <div class="upper-column-container d-flex flex-column justify-content-center align-items-start">
-                <div class="footer-header">Categories</div>
-<<<<<<< HEAD
-                <a class="footer-upper-column-text" href="/Production.html">Production</a>
-=======
-                <a class="footer-upper-column-text">Production</a>
->>>>>>> 57cd7b998b0da9c00d2ad3566a94e9d074e95400
-                <a class="footer-upper-column-text">Graphic & Digital Arts</a>
-                <a class="footer-upper-column-text">Animation / Motion</a>
-                <a class="footer-upper-column-text">Sound</a>
+                <div class="footer-header">หมวดหมู่</div>
+                <a class="footer-upper-column-text">โปรดักชั่น</a>
+                <a class="footer-upper-column-text">กราฟิก & ภาพประกอบ</a>
+                <a class="footer-upper-column-text">แอนิเมชั่น / โมชั่นกราฟิก</a>
+                <a class="footer-upper-column-text">เสียง</a>
             </div>
             <div class="upper-column-container d-flex flex-column justify-content-center align-items-start">
-                <div class="footer-header">About Us</div>
-                <a class="footer-upper-column-text">About</a>
-                <a class="footer-upper-column-text">Direction</a>
-                <a class="footer-upper-column-text">Our Team</a>
-                <a class="footer-upper-column-text">Address</a>
+                <div class="footer-header">พวกเราทรงเชง</div>
+                <a class="footer-upper-column-text">เกี่ยวกับเรา</a>
+                <a class="footer-upper-column-text">แนวทางการทำงาน</a>
+                <a class="footer-upper-column-text">ทีมงานทรงเชง</a>
+                <a class="footer-upper-column-text">ที่อยู่</a>
             </div>
             <div class="upper-column-container d-flex flex-column justify-content-center align-items-start">
-                <div class="footer-header">Community</div>
-                <a class="footer-upper-column-text" href="https://linktr.ee/zongzheng.inc"target="_blank" rel="noopener">Social Media</a>
+                <div class="footer-header">ชุมชนของเรา</div>
+                <a class="footer-upper-column-text" href="https://linktr.ee/zongzheng.inc"target="_blank" rel="noopener">ช่องทางอื่นๆ</a>
                 <a class="footer-upper-column-blank">Blank</a>
                 <a class="footer-upper-column-blank">Blank</a>
                 <a class="footer-upper-column-blank">Blank</a>
@@ -220,7 +204,7 @@
         <div class="down-footer-container d-flex justify-content-between align-items-center">
             <div class="inside-down-footer-container w-100 d-flex justify-content-between">
                 <div class="footer-left-panel"><!--Contact-US-->
-                    <div class="footer-header footer-contact">CONTACT US :</div>
+                    <div class="footer-header footer-contact">ช่องทางติดต่อ พวกเรา :</div>
                     <input type="button" class="footer-email" id="email-btn" value="(Email)" onclick="EmailCopying()" onmouseleave="MouseoutEmail()">
                     <div class="footer-hire-for-more">
                         <div class="footer-hire-text">HIRE OR MORE INFO.</div>
@@ -232,7 +216,7 @@
                     </div>
                 </div>
                 <div class="footer-right-panel text-end"><!--Follow-US-->
-                    <div class="footer-header">FOLLOW US :</div>
+                    <div class="footer-header">ติดตามได้ที่ :</div>
                     <div class="footer-icon d-flex flex-row justify-content-center align-items-center gap-icon">
                         <a href="https://lin.ee/rzECUeQ" target="_blank" rel="noopener">
                             <img src="SRC/Index/line-icon.png" alt="line-icon">
