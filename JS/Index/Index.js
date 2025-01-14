@@ -45,29 +45,29 @@ function redirectToWebsite() {
   var inputFieldValue = document.getElementById('searchbar').value;
   if (inputFieldValue.toLowerCase() === 'production') {
       inputFieldValue.value ="Production";
-      window.location.href = 'testnavbar.html';
+      window.location.href = 'Production.html';
   } else if(inputFieldValue.toLowerCase() === 'graphic'){
       inputFieldValue.value = "Graphic";
-      window.location.href = '';
+      window.location.href = 'Under-construction.html';
   } else if(inputFieldValue.toLowerCase() === 'sound'){
     inputFieldValue.value = "Sound";
-    window.location.href = '';
+    window.location.href = 'Under-construction.html';
   } else if(inputFieldValue.toLowerCase() === 'digital arts'){
     inputFieldValue.value = "Digital Arts";
-    window.location.href = 'wawun/Work_graphic.html#Gall-Ahref';
+    window.location.href = 'Under-construction.html';
   } else if(inputFieldValue.toLowerCase() === 'animation/motion'){
-    inputFieldValue.value = "";
+    inputFieldValue.value = "Under-construction.html";
     window.location.href = 'Zongzheng - work animation/Zongzheng-Animation.html';
   } else if(inputFieldValue === 'โปรดักชัน'){
-    window.location.href = '';
+    window.location.href = 'TH-Production.html';
   } else if(inputFieldValue === 'กราฟิก'){
-    window.location.href = '';
+    window.location.href = 'Under-construction.html';
   } else if(inputFieldValue === 'เสียง'){
-    window.location.href = '';
+    window.location.href = 'Under-construction.html';
   } else if(inputFieldValue === 'ดิจิทัล อาร์ต'){
-    window.location.href = 'wawun/Work_graphic_TH.html#Gall-Ahref';
+    window.location.href = 'Under-construction.html';
   } else if(inputFieldValue === ''){
-    window.location.href = '';
+    window.location.href = 'Under-construction.html';
   }
    else{
     alert('Please select or type like a topic below.');

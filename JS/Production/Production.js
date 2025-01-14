@@ -71,5 +71,45 @@ document.querySelector('.channel-down').addEventListener('click', () => {
 
 showFilm(currentFilmIndex);
 
+//========= button to channelup-down ==========//
+document.getElementById('sidebar-btn').addEventListener('click', function () {
+    const icon = this.querySelector('span'); // Select the child <span> inside the parent div
+    // Check if the <span> has the class 'fa-angle-right'
+    if (icon.classList.contains('fa-angle-right')) {
+        icon.classList.remove('fa-angle-right');
+        icon.classList.add('fa-angle-left');
+    } else {
+        icon.classList.remove('fa-angle-left');
+        icon.classList.add('fa-angle-right');
+    }
+});
 
+//========= Sidebar ==========//
+const sidebarbtn = document.getElementById('sidebar-btn');
+const sidebar = document.getElementById('sidebar');
+let isSidebarOpen = false;
+
+sidebarbtn.addEventListener('click', function () {
+    if (isSidebarOpen) { // Close the sidebar //
+        sidebarbtn.style.left = '0%';
+        sidebar.style.left = '-300px';
+    } else { // Open the sidebar //
+        const currentLeft = parseInt(sidebarbtn.style.left, 10) || 0;
+        sidebarbtn.style.left = `${currentLeft + 300}px`;
+        sidebar.style.left = '0';
+    }
+    isSidebarOpen = !isSidebarOpen;
+});
+//========= Show-info ==========//
+document.querySelectorAll('.toggle-child').forEach(parent => {
+    parent.addEventListener('click', function (e) {
+        e.preventDefault(); // Prevent default behavior of links
+        const childMenu = this.nextElementSibling; // Get the associated child menu
+        if (childMenu.classList.contains('hidden')) {
+            childMenu.classList.remove('hidden'); // Show the menu
+        } else {
+            childMenu.classList.add('hidden'); // Hide the menu
+        }
+    });
+});
 
