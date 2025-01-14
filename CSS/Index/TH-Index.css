@@ -366,6 +366,7 @@ body{
     transform: rotate(7.5deg);
     transition: 0.5s ease;
     z-index: 5;
+    width: max-content;
 
 }
 .mt-text:hover{
@@ -423,6 +424,7 @@ body{
 }
 .footer-header{
     position: relative;
+    
     font-size: 2.25rem;
     font-weight: bold;
     color: white;
@@ -432,6 +434,7 @@ body{
 .footer-upper-column-text{
     padding-left: 5px;
     margin-bottom: 5px;
+    width: max-content;
     font-size: 1.3rem;
     color: white;
     cursor: pointer;

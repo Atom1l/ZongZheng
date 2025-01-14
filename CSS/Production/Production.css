@@ -14,20 +14,87 @@ html,body{
  justify-content: center;
  align-items: center;
  top: 25%;
+ left: 0%;
  border-radius: 0 10px 10px 0;
  background-color: rgba(167, 165, 165,0.7);
  padding: 8px 8px 8px 15px;
  transform: scale(3);
- transition: 0.3s ease;
+ transition: 0.7s ease;
  cursor: pointer;
- z-index: 98;  
+ z-index: 100;  
 }
-.fa-angle-right{
+.fa-angle-right, .fa-angle-left{
     color:#474747;
     transition: 0.3s ease;
 }
 .side-nav-btn:hover .fa-angle-right{
     color: white;
+}
+.side-nav-btn:hover .fa-angle-left{
+    color: white;
+}
+.side-nav-container{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0%;
+    left: -300px;
+    transition: 0.7s ease;
+    cursor: pointer;
+    z-index: 101;
+    width: 300px;
+    height: 100vh;
+    overflow: hidden;
+}
+.sidebar{
+    padding-top: 70px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: #e9e9e9;
+}
+.sidebar ul{
+    margin: 0;
+    padding: 0;
+    font-size: 1.35rem;
+}
+.product-parent-link{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    color: #282828;
+    border-bottom: solid 1px #d4d4d4;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+.product-parent-link:hover{
+    background: #d3d1d1;
+}
+.sidebar li{
+    list-style-type: none;
+}
+.side-child-product li, .side-child-graphic li, .side-child-animation li, .side-child-sound li{
+    margin-top: 0px;
+    margin-bottom: 1px;
+}
+.side-child-product a, .side-child-graphic a, .side-child-animation a, .side-child-sound a{
+    position: relative;
+    display: block;
+    color: #e9e9e9;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #282828;
+    transition: max-height 0.3s ease;
+}
+.side-child-product a:hover, .side-child-graphic a:hover, .side-child-animation a:hover, .side-child-sound a:hover{
+    background: #454545;
+}
+.hidden{
+    display: none;
 }
 
 /*-Body-section-*/
@@ -53,6 +120,13 @@ html,body{
     position: relative;
     background-color: #282828;
     border: solid 2px #282828;
+}
+.section-photo{
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-color: #e9e9e9;
+    border: solid 2px #e9e9e9;
 }
 /*-Juad-section-*/
 .pd-play-button{
@@ -183,6 +257,10 @@ html,body{
 .sf-description, .sf-creator, .moreinfo{
     transition: 0.3s ease;
 }
+.sf-creator{
+    font-weight: bold;
+    margin-top: 5px;
+}
 .moreinfo{
     padding: 0;
     margin-left: -15px;
@@ -272,7 +350,467 @@ html,body{
 .tv-white-desk{
     transition: 0.3s ease;
 }
-
+/*-photo-section-*/
+.photo-banner{
+    position: relative;
+    width: 100%;
+    height: 70px;
+    margin-top: 100px;
+    padding: 5px 0px 0px 0px;
+    background-color: white;
+    border-top: solid 2px #282828;
+    border-bottom: solid 2px #282828;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.3rem;
+}
+.instruction-photo{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+    margin-top: 40px;
+    right: 5%;
+    transition: 0.3s ease;
+}
+.instruct-info-icon img{
+    margin-left: 5px;
+    transform: scale(0.7);
+}
+.photo-header{
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-top: 5px;
+}
+.photo-description{
+    font-size:1.2rem;
+}
+.photo-creator{
+    font-size: 1.2rem;
+    margin-top: 7px;
+}
+.img-container{
+    width: 100%;
+    padding-bottom: 150px;
+}
+.img-sec1{
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    transition: 0.3s ease;
+}
+.img-sec2{
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+}
+.img-sec3{
+    width: 100%;
+    height: 100%;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+}
+.img-sec4{
+    width: 100%;
+    height: 100%;
+    margin-top: 250px;
+    margin-bottom:-120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+}
+.img-sec5{
+    width: 100%;
+    height: 100%;
+    margin-top: 200px;
+    margin-bottom:-70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+}
+.img-sec6{
+    width: 100%;
+    height: 100%;
+    margin-top: 200px;
+    margin-bottom: -70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+}
+/*IMG1*/
+.streetboat{
+    position: relative;
+    display: inline-block;
+    margin-left: -250px;
+    transition: 0.3s ease;
+}
+.streetboat-textbox{
+    position: absolute;
+    display: none;
+}
+.streetboat-img{
+    opacity: 0.5;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.streetboat:hover .streetboat-textbox{
+    display: block;
+}
+.streetboat:hover .streetboat-img{
+    opacity: 1;
+}
+/*IMG2*/
+.film-portrait{
+    position: relative;
+    display: inline-block;
+    margin-top: 300px;
+    left: 12.5%;
+    transition: 0.3s ease;
+}
+.film-portrait-textbox{
+    position: absolute;
+    text-align: end;
+    width: 100%;
+    display: none;
+}
+.film-portrait-img{
+    opacity: 0.5;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.film-portrait:hover .film-portrait-textbox{
+    display: block;
+}
+.film-portrait:hover .film-portrait-img{
+    opacity: 1;
+}
+/*IMG3*/
+.rim-light{
+    position: relative;
+    display: inline-block;
+    left: 14%;
+    transition: 0.3s ease;
+}
+.rim-light-textbox{
+    position: absolute;
+    text-align: end;
+    width: 100%;
+    display: none;
+}
+.rim-light-img{
+    opacity: 0.5;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.rim-light:hover .rim-light-textbox{
+    display: block;
+}
+.rim-light:hover .rim-light-img{
+    opacity: 1;
+}
+/*IMG4*/
+.belong-together{
+    position: relative;
+    display: inline-block;
+    right: 24%;
+    transition: 0.3s ease;
+}
+.belong-together-textbox{
+    position: absolute;
+    display: none;
+}
+.belong-together-img{
+    opacity: 0.5;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.belong-together:hover .belong-together-textbox{
+    display: block;
+}
+.belong-together:hover .belong-together-img{
+    opacity: 1;
+}
+/*IMG5*/
+.duo{
+    position: relative;
+    display: inline-block;
+    text-align: end;
+    left: 25%;
+    transition: 0.3s ease;
+}
+.duo-textbox{
+    position: absolute;
+    text-align: end;
+    width: 100%;
+    display: none;
+}
+.duo-img{
+    opacity: 0.5;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.duo:hover .duo-textbox{
+    display: block;
+}
+.duo:hover .duo-img{
+    opacity: 1;
+}
+/*IMG6*/
+.candit{
+    position: relative;
+    display: inline-block;
+    margin-top: -150px;
+    right: 29.6%;
+    transition: 0.3s ease;
+}
+.candit-textbox{
+    position: absolute;
+    display: none;
+}
+.candit-img{
+    opacity: 0.5;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.candit:hover .candit-textbox{
+    display: block;
+}
+.candit:hover .candit-img{
+    opacity: 1;
+}
+/*IMG7*/
+.splash{
+    position: relative;
+    display: inline-block;
+    right: 10%;
+    transition: 0.3s ease;
+}
+.splash-textbox{
+    position: absolute;
+    display: none;
+}
+.splash-img{
+    opacity: 0.5;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.splash:hover .splash-textbox{
+    display: block;
+}
+.splash:hover .splash-img{
+    opacity: 1;
+}
+/*IMG8*/
+.drip{
+    position: relative;
+    display: inline-block;
+    text-align: end;
+    left: 10%;
+    transition: 0.3s ease;
+}
+.drip-textbox{
+    position: absolute;
+    display: none;
+}
+.drip-img{
+    opacity: 0.5;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.drip:hover .drip-textbox{
+    display: block;
+}
+.drip:hover .drip-img{
+    opacity: 1;
+}
+/*IMG9*/
+.couple1{
+    position: relative;
+    display: inline-block;
+    right: 15%;
+    transition: 0.3s ease;
+}
+.couple1-textbox{
+    position: absolute;
+    display: none;
+}
+.couple1-img{
+    opacity: 0.5;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.couple1:hover .couple1-textbox{
+    display: block;
+}
+.couple1:hover .couple1-img{
+    opacity: 1;
+}
+/*IMG10*/
+.couple2{
+    position: relative;
+    display: inline-flex;
+    flex-direction: row;
+    text-align: start;
+    margin-top: -50px;
+    margin-left: 742px;
+    transition: 0.3s ease;
+}
+.couple2-textbox{
+    position: absolute;
+    width: 100%;
+    margin-top: -12px;
+    left: 290px;
+    display: none;
+}
+.couple2-img{
+    opacity: 0.5;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.couple2:hover .couple2-textbox{
+    display: block;
+}
+.couple2:hover .couple2-img{
+    opacity: 1;
+}
+/*IMG11*/
+.couple3{
+    position: relative;
+    display: inline-flex;
+    flex-direction: row;
+    text-align: end;
+    margin-top: -150px;
+    margin-left: 190px;
+    transition: 0.3s ease;
+}
+.couple3-textbox{
+    position: absolute;
+    width: 100%;
+    margin-top: 255px;
+    left: -290px;
+    display: none;
+}
+.couple3-img{
+    opacity: 0.5;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.couple3:hover .couple3-textbox{
+    display: block;
+}
+.couple3:hover .couple3-img{
+    opacity: 1;
+}
+/*IMG12*/
+.student1{
+    position: relative;
+    display: inline-block;
+    margin-top: 80px;
+    right: 5%;
+    transition: 0.3s ease;
+}
+.student1-img{
+    opacity: 0.5;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.student1:hover ~.student2 .student2-textbox{
+    display: block;
+}
+.student1:hover .student1-img{
+    opacity: 1;
+}
+/*IMG13*/
+.student2{
+    position: relative;
+    display: inline-block;
+    text-align: end;
+    left: 5%;
+    transition: 0.3s ease;
+}
+.student2-textbox{
+    width: 100%;
+    margin-top: 0px;
+    position: absolute;
+    display: none;
+}
+.student2-img{
+    opacity: 0.5;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.student2:hover .student2-textbox{
+    display: block;
+}
+.student2:hover .student2-img{
+    opacity: 1;
+}
+/*IMG14*/
+.siamniramit{
+    position: relative;
+    display: inline-block;
+    text-align: start;
+    left: -36%;
+    transition: 0.3s ease;
+}
+.siamniramit-textbox{
+    width: 100%;
+    margin-top: 0px;
+    position: absolute;
+    display: none;
+}
+.siamniramit-img{
+    opacity: 0.5;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.siamniramit:hover .siamniramit-textbox{
+    display: block;
+}
+.siamniramit:hover .siamniramit-img{
+    opacity: 1;
+}
+/*IMG15*/
+.siamniramit2{
+    position: relative;
+    display: inline-block;
+    text-align: start;
+    margin-top: 150px;
+    left: 36%;
+    transition: 0.3s ease;
+}
+.siamniramit2-img{
+    opacity: 0.5;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.siamniramit2:hover ~.siamniramit .siamniramit-textbox{
+    display: block;
+}
+.siamniramit2:hover .siamniramit2-img{
+    opacity: 1;
+}
 
 @media (max-width:1600px){
     /*sf-tv*/
@@ -288,12 +826,72 @@ html,body{
         margin-left: -650px;
         transform: scale(0.55);
     }
+    /*-photo-sec1-*/
+    .img-sec1{
+        transform: scale(0.85);
+    }
+    .streetboat{
+        margin-left: -130px;
+    }
+    .film-portrait{
+        left: 8%;
+    }
+    .rim-light{
+        left: 10%;
+    }
+    /*-photo-sec2-*/
+    .img-sec2{
+        margin-top: -120px;
+        transform: scale(0.85);
+    }
+    .belong-together{
+        right: 27%;
+    }
+    .duo{
+        left: 28.5%;
+    }
+    .candit{
+        right: 33%;
+    }
+    /*-photo-sec3-*/
+    .img-sec3{
+        margin-top: 0px;
+        transform: scale(0.85);
+    }
+    /*-photo-sec4-*/
+    .img-sec4{
+        margin-top: 0px;
+        margin-bottom: -200px;
+        transform: scale(0.85);
+    }
+    .couple1{
+        right: 20%;
+    }
+    /*-photo-sec5-*/
+    .img-sec5{
+        margin-top: 100px;
+        margin-bottom: -120px;
+        transform: scale(0.85);
+    }
+    /*-photo-sec6-*/
+    .img-sec6{
+        margin-top: 100px;
+        margin-bottom: -120px;
+        transform: scale(0.85);
+    }
+    .siamniramit{
+        left: -42.5%;
+    }
+    .siamniramit2{
+       left: 42.5%; 
+    }
 }
 @media(max-width:1500px){
     /*-sf-list-*/
     .multicamp-rotation{
         width: 310px;
     }
+    /*-Photo-section-*/
 }
 @media (max-width:1400px){
     .tv-container{
@@ -306,7 +904,7 @@ html,body{
     }
     /*sf-list*/
     .no-signal-tv{
-        margin-bottom: -150px;
+        margin-bottom: -130px;
         margin-left: -600px;
         transform: scale(0.5);
     }
@@ -316,6 +914,66 @@ html,body{
     }
     .multicamp-rotation{
         width: 260px;
+    }
+    /*-photo-sec1-*/
+    .img-sec1{
+        margin-top: 0px;
+        transform: scale(0.8);
+    }
+    .streetboat{
+        margin-left: -120px;
+    }
+    .film-portrait{
+        left: 8%;
+    }
+    .rim-light{
+        left: 10%;
+    }
+    /*-photo-sec2-*/
+    .img-sec2{
+        margin-top: -170px;
+        transform: scale(0.8);
+    }
+    .belong-together{
+        right: 32%;
+    }
+    .duo{
+        left: 33%;
+    }
+    .candit{
+        right: 38%;
+    }
+    /*-photo-sec3-*/
+    .img-sec3{
+        margin-top: -50px;
+        transform: scale(0.8);
+    }
+    /*-photo-sec4-*/
+    .img-sec4{
+        margin-top: -50px;
+        margin-bottom: -230px;
+        transform: scale(0.8);
+    }
+    .couple1{
+        right: 22.5%;
+    }
+    /*-photo-sec5-*/
+    .img-sec5{
+        margin-top: 100px;
+        margin-bottom: -120px;
+        transform: scale(0.8);
+    }
+    /*-photo-sec6-*/
+    .img-sec6{
+        margin-top: 70px;
+        margin-bottom: -150px;
+        transform: scale(0.8);
+    }
+    .siamniramit{
+        left: -47.5%;
+    }
+    .siamniramit2{
+       left: 47.5%; 
     }
 }
 @media (max-width:1300px){
@@ -338,6 +996,66 @@ html,body{
     }
     .sf-list{
         font-size: 1.25rem;
+    }
+    /*-photo-sec1-*/
+    .img-sec1{
+        margin-top: -40px;
+        transform: scale(0.75);
+    }
+    .streetboat{
+        margin-left: -120px;
+    }
+    .film-portrait{
+        left: 8%;
+    }
+    .rim-light{
+        left: 10%;
+    }
+    /*-photo-sec2-*/
+    .img-sec2{
+        margin-top: -220px;
+        transform: scale(0.75);
+    }
+    .belong-together{
+        right: 34%;
+    }
+    .duo{
+        left: 35%;
+    }
+    .candit{
+        right: 40.5%;
+    }
+    /*-photo-sec3-*/
+    .img-sec3{
+        margin-top: -100px;
+        transform: scale(0.75);
+    }
+    /*-photo-sec4-*/
+    .img-sec4{
+        margin-top: -100px;
+        margin-bottom: -260px;
+        transform: scale(0.75);
+    }
+    .couple1{
+        right: 25%;
+    }
+    /*-photo-sec5-*/
+    .img-sec5{
+        margin-top: 90px;
+        margin-bottom: -140px;
+        transform: scale(0.75);
+    }
+    /*-photo-sec6-*/
+    .img-sec6{
+        margin-top: 60px;
+        margin-bottom: -160px;
+        transform: scale(0.75);
+    }
+    .siamniramit{
+        left: -50.5%;
+    }
+    .siamniramit2{
+       left: 50.5%; 
     }
 }
 @media (max-width:1200px){
@@ -369,6 +1087,93 @@ html,body{
     .tv-white-desk{
         margin-bottom: -250px;
     }
+    /*-photo-sec1-*/
+    .img-header{
+        font-size: 2.5rem;
+    }
+    .img-description{
+        font-size: 1.5rem;
+    }
+    .img-creator{
+        font-size: 1.35rem;
+        font-weight: bold;
+    }
+    .img-sec1{
+        margin-top: -40px;
+        transform: scale(0.7);
+    }
+    .streetboat{
+        margin-left: -110px;
+    }
+    .film-portrait{
+        left: 5%;
+    }
+    .rim-light{
+        left: 10%;
+    }
+    /*-photo-sec2-*/
+    .img-sec2{
+        margin-top: -280px;
+        transform: scale(0.7);
+    }
+    .belong-together{
+        right: 37%;
+    }
+    .duo{
+        left: 38%;
+    }
+    .candit{
+        right: 44%;
+    }
+    /*-photo-sec3-*/
+    .img-sec3{
+        margin-top: -150px;
+        transform: scale(0.7);
+    }
+    /*-photo-sec4-*/
+    .img-sec4{
+        margin-top: -100px;
+        margin-bottom: -280px;
+        transform: scale(0.7);
+    }
+    .couple1{
+        right: 25%;
+    }
+    .couple2{
+        margin-left: 650px;
+    }
+    .couple3{
+        margin-left: 99.5px;
+    }
+    .couple3-textbox{
+        margin-top: 215px;
+    }
+    /*-photo-sec5-*/
+    .img-sec5{
+        margin-top: 80px;
+        margin-bottom: -140px;
+        transform: scale(0.7);
+    }
+    /*-photo-sec6-*/
+    .img-sec6{
+        margin-top: 50px;
+        margin-bottom: -150px;
+        transform: scale(0.7);
+    }
+    .siamniramit{
+        left: -53.5%;
+    }
+    .siamniramit2{
+       left: 52.5%; 
+    }
+}
+@media(max-width:1110px){
+    .siamniramit{
+        left: -57.5%;
+    }
+    .siamniramit2{
+       left: 56.5%; 
+    }
 }
 @media(max-width:1070px){
     .no-signal-tv{
@@ -382,6 +1187,67 @@ html,body{
     }
     .multi-welove{
         width: 230px;
+    }
+    /*-photo-sec1-*/
+    .img-sec1{
+        margin-top: -60px;
+        transform: scale(0.65);
+    }
+    .streetboat{
+        margin-left: -110px;
+    }
+    .film-portrait{
+        left: 5%;
+    }
+    .rim-light{
+        left: 10%;
+    }
+    /*-photo-sec2-*/
+    .img-sec2{
+        margin-top: -340px;
+        transform: scale(0.65);
+    }
+    .belong-together{
+        right: 37%;
+    }
+    .duo{
+        margin-top: 50px;
+        left: 38%;
+    }
+    .candit{
+        right: 44%;
+    }
+    /*-photo-sec3-*/
+    .img-sec3{
+        margin-top: -200px;
+        transform: scale(0.65);
+    }
+    /*-photo-sec4-*/
+    .img-sec4{
+        margin-top: -150px;
+        margin-bottom: -310px;
+        transform: scale(0.65);
+    }
+    .couple1{
+        right: 27%;
+    }
+    /*-photo-sec5-*/
+    .img-sec5{
+        margin-top: 70px;
+        margin-bottom: -160px;
+        transform: scale(0.65);
+    }
+    /*-photo-sec6-*/
+    .img-sec6{
+        margin-top: 40px;
+        margin-bottom: -170px;
+        transform: scale(0.65);
+    }
+    .siamniramit{
+        left: -59%;
+    }
+    .siamniramit2{
+       left: 59%; 
     }
 }
 @media(max-width:1030px){
@@ -410,13 +1276,101 @@ html,body{
     .multicamp-rotation{
         width: 200px;
     }
+    /*-photo-sec1-*/
+    .streetboat{
+        margin-left: -80px;
+    }
+    .film-portrait{
+        left: 4%;
+    }
+    .rim-light{
+        left: 8%;
+    }
+    /*-IMG-SEC6-*/
+    .siamniramit{
+        left: -61.5%;
+    }
+    .siamniramit2{
+       left: 61.5%; 
+    }
 }
 @media(max-width:970px){
     .multi-welove{
         width: 160px;
     }
+    /*-photo-sec1-*/
+    .img-sec1{
+        margin-top: -80px;
+        transform: scale(0.6);
+    }
+    .streetboat{
+        margin-left: -70px;
+    }
+    .film-portrait{
+        left: 4%;
+    }
+    .rim-light{
+        left: 8%;
+    }
+    /*-photo-sec2-*/
+    .img-sec2{
+        margin-top: -390px;
+        transform: scale(0.6);
+    }
+    .belong-together{
+        right: 40%;
+    }
+    .duo{
+        margin-top: 50px;
+        left: 40%;
+    }
+    .candit{
+        right: 48%;
+    }
+    /*-photo-sec3-*/
+    .img-sec3{
+        margin-top: -260px;
+        transform: scale(0.6);
+    }
+    /*-photo-sec4-*/
+    .img-sec4{
+        margin-top: -200px;
+        margin-bottom: -330px;
+        transform: scale(0.6);
+    }
+    /*-photo-sec5-*/
+    .img-sec5{
+        margin-top: 50px;
+        margin-bottom: -170px;
+        transform: scale(0.6);
+    }
+    /*-photo-sec6-*/
+    .img-sec6{
+        margin-top: 25px;
+        margin-bottom: -190px;
+        transform: scale(0.6);
+    }
+    .siamniramit{
+        left: -64.5%;
+    }
+    .siamniramit2{
+       left: 65.5%; 
+    }
 }
 @media(max-width:950px){
+    .tv-container{
+        transform: scale(0.55);
+    }
+    .plant-pot, .short-film-tv{
+        margin-top: -100px;
+        margin-bottom: -100px;
+    }
+    .grey-desk{
+        transform: scale(1.85);
+    }
+    .sf-description, .sf-creator, .moreinfo{
+        font-size: 1.2rem;
+    }
     /*sf-list*/
     .lonely{
         width: 160px;
@@ -432,19 +1386,7 @@ html,body{
     }
 }
 @media (max-width:910px){
-    .tv-container{
-        transform: scale(0.55);
-    }
-    .plant-pot, .short-film-tv{
-        margin-top: -100px;
-        margin-bottom: -100px;
-    }
-    .grey-desk{
-        transform: scale(1.85);
-    }
-    .sf-description, .sf-creator, .moreinfo{
-        font-size: 1.2rem;
-    }
+    
     /*sf-list*/
     .multicamp-rotation{
         width: 180px;
@@ -455,11 +1397,151 @@ html,body{
         margin-left: -380px;
         transform: scale(0.35);
     } 
+    /*-photo-sec1-*/
+    .img-sec1{
+        margin-top: -110px;
+        transform: scale(0.55);
+    }
+    .streetboat{
+        margin-left: -70px;
+    }
+    .film-portrait{
+        left: 4%;
+    }
+    .rim-light{
+        left: 8%;
+    }
+    /*-photo-sec2-*/
+    .img-sec2{
+        margin-top: -450px;
+        transform: scale(0.55);
+    }
+    .belong-together{
+        right: 42%;
+    }
+    .duo{
+        margin-top: 50px;
+        left: 42%;
+    }
+    .candit{
+        right: 50%;
+    }
+    /*-photo-sec3-*/
+    .img-sec3{
+        margin-top: -310px;
+        transform: scale(0.55);
+    }
+    /*-photo-sec4-*/
+    .img-sec4{
+        margin-top: -250px;
+        margin-bottom: -360px;
+        transform: scale(0.55);
+    }
+    .couple1{
+        right: 30%;
+    }
+    .couple2{
+        margin-left: 650px;
+    }
+    .couple3{
+        margin-left: 99.5px;
+    }
+    .couple3-textbox{
+        margin-top: 215px;
+    }
+    /*-photo-sec5-*/
+    .img-sec5{
+        margin-top: 50px;
+        margin-bottom: -190px;
+        transform: scale(0.55);
+    }
+    /*-photo-sec6-*/
+    .img-sec6{
+        margin-top: 15px;
+        margin-bottom: -210px;
+        transform: scale(0.55);
+    }
+    .siamniramit{
+        left: -69.5%;
+    }
+    .siamniramit2{
+       left: 69.5%; 
+    }
 }
 @media(max-width:855px){
     /*sf-list*/
     .no-signal-tv{
         margin-left: -340px;
+    }
+    /*-photo-sec1-*/
+    .img-sec1{
+        margin-top: -130px;
+        transform: scale(0.5);
+    }
+    .streetboat{
+        margin-left: -70px;
+    }
+    .film-portrait{
+        left: 4%;
+    }
+    .rim-light{
+        left: 8%;
+    }
+    /*-photo-sec2-*/
+    .img-sec2{
+        margin-top: -500px;
+        transform: scale(0.5);
+    }
+    .belong-together{
+        right: 50%;
+    }
+    .duo{
+        margin-top: 50px;
+        left: 50%;
+    }
+    .candit{
+        right: 58%;
+    }
+    /*-photo-sec3-*/
+    .img-sec3{
+        margin-top: -370px;
+        transform: scale(0.5);
+    }
+    /*-photo-sec4-*/
+    .img-sec4{
+        margin-top: -310px;
+        margin-bottom: -380px;
+        transform: scale(0.5);
+    }
+    .couple1{
+        right: 35%;
+    }
+    .couple2{
+        margin-left: 650px;
+    }
+    .couple3{
+        margin-left: 99.5px;
+    }
+    .couple3-textbox{
+        margin-top: 215px;
+    }
+    /*-photo-sec5-*/
+    .img-sec5{
+        margin-top: 20px;
+        margin-bottom: -200px;
+        transform: scale(0.5);
+    }
+    /*-photo-sec6-*/
+    .img-sec6{
+        margin-top: -210px;
+        margin-bottom: -230px;
+        transform: scale(0.5);
+    }
+    .siamniramit{
+        left: -73.5%;
+    }
+    .siamniramit2{
+       left: 73.5%; 
     }
 }
 @media (max-width:810px){
@@ -497,6 +1579,14 @@ html,body{
     .tv-white-desk{
         margin-bottom: -350px;
     }
+    /*-Img-sec6-*/
+    .siamniramit{
+        left: -77.5%;
+    }
+    .siamniramit2{
+       left: 77.5%; 
+    }
+    
 }
 @media(max-width:767px){
     .plant-pot, .short-film-tv{
@@ -533,6 +1623,137 @@ html,body{
     .a-mov-list{
         width: 90%;
     }
+    /*-photo-sec1-*/
+    .img-sec1{
+        margin-top: -80px;
+        flex-direction: column !important;
+        justify-content: center;
+        align-items: center;
+        transform: scale(0.8);
+    }
+    .photo-header{
+        font-size: 1.7rem;
+    }
+    .photo-description, .photo-creator{
+        font-size:1.2rem;
+    }
+    .streetboat{
+        top: 0;
+        left: 5.1%;
+    }
+    .film-portrait{
+        margin-top: 250px;
+        margin-left: -475px;
+    }
+    .film-portrait-textbox{
+        text-align: start;
+    }
+    .rim-light{
+        margin-top: -600px;
+        margin-left: 315px;
+    }
+    /*-photo-sec2-*/
+    .img-sec2{
+        margin-top: -100px;
+        transform: scale(0.8);
+    }
+    .belong-together{
+        right: 8%;
+    }
+    .duo{
+        margin-top: 150px;
+        left: 5%;
+    }
+    .candit{
+        margin-top: 150px;
+        right: 14.5%;
+    }
+    /*-photo-sec3-*/
+    .img-sec3{
+        margin-top: -150px;
+        transform: scale(0.625);
+    }
+    .splash{
+        right: 3%;
+    }
+    .drip{
+        left: 3%;
+    }
+    .splash .img-header , .drip .img-header{
+        font-size: 2.25rem;
+    }
+    .splash .img-description , .drip .img-description{
+        font-size: 1.6rem;
+    }
+    .splash .img-creator , .drip .img-creator{
+        font-size: 1.65rem;
+    }
+    /*-photo-sec4-*/
+    .img-sec4{
+        margin-top: -90px;
+        margin-bottom: -250px;
+        transform: scale(0.8);
+    }
+    .couple1{
+        right: 0;
+    }
+    .couple2{
+        margin-top: 150px;
+        margin-right: 350px;
+        text-align: end;
+    }
+    .couple2-textbox{
+        left: -290px;
+    }
+    .couple3{
+        margin-right: 400px;
+        text-align: start;
+    }
+    .couple3-textbox{
+        margin-top: 255px;
+        left: 290px;
+    }
+    /*-photo-sec5-*/
+    .img-sec5{
+        flex-direction: column;
+        margin-bottom: -230px;
+        transform: scale(0.8);
+    }
+    .student1-img, .student2-img{
+        transform: scale(0.8);
+    }
+    .student1{
+        right: 15%;
+    }
+    .student2{
+        margin-top: -50px;
+        left: 20%;
+    }
+    .student2-textbox{
+        margin-top: -355px;
+        margin-left: -225px;
+        width: 270px;
+    }
+    /*-photo-sec6-*/
+    .img-sec6{
+        flex-direction: column;
+        transform: scale(0.8);
+    }
+    .siamniramit{
+        top: -500px;
+        left: -150px;
+    }
+    .siamniramit-img, .siamniramit2-img{
+        transform: scale(0.85);
+    }
+    .siamniramit-textbox{
+        top: 400px;
+        left: 42.5px;
+    }
+    .siamniramit2{
+        top: 470px;
+        left: 150px;
+    }
 }
 @media(max-width:650px){
     .tv-container{
@@ -553,7 +1774,121 @@ html,body{
     .sf-description, .sf-creator, .moreinfo{
         font-size: 1.3rem;
     }
-
+    /*-photo-sec1-*/
+    .img-sec1{
+        margin-top: -100px;
+        transform: scale(0.75);
+    }
+    /*-photo-sec2-*/
+    .img-sec2{
+        margin-top: -180px;
+        transform: scale(0.75);
+    }
+    .belong-together{
+        right: 10%;
+    }
+    .duo{
+        margin-top: 150px;
+        left: 5.5%;
+    }
+    .candit{
+        margin-top: 150px;
+        right: 16.5%;
+    }
+    /*-photo-sec3-*/
+    .img-sec3{
+        margin-top: -220px;
+        transform: scale(0.58);
+    }
+    /*-photo-sec4-*/
+    .img-sec4{
+        margin-top: -160px;
+        margin-bottom: -280px;
+        transform: scale(0.75);
+    }
+    /*-photo-sec5-*/
+    .img-sec5{
+        margin-top: -200px;
+        margin-bottom: -250px;
+        transform: scale(0.75);
+    }
+    .student2-textbox{
+        margin-left: -170px;
+        width: 220px;
+    }
+    /*-photo-sec6-*/
+    .img-sec6{
+        margin-top: -280px;
+        margin-bottom: -250px;
+        flex-direction: column;
+        transform: scale(0.75);
+    }
+}
+@media(max-width:610px){
+    .side-nav-btn{
+        transform: scale(2.5);
+    }
+    .sidebar{
+        padding-top: 45px;
+    }
+    .product-parent-link{
+        height: 70px;
+    }
+    .sidebar ul{
+        font-size: 1rem;
+    }
+    .side-child-product a, .side-child-graphic a, .side-child-animation a, .side-child-sound a{
+        font-size: 0.9rem;
+    }
+    /*-photo-sec1-*/
+    .img-sec1{
+        margin-top: -130px;
+        transform: scale(0.7);
+    }
+    /*-photo-sec2-*/
+    .img-sec2{
+        margin-top: -250px;
+        transform: scale(0.7);
+    }
+    .belong-together{
+        right: 12%;
+    }
+    .duo{
+        margin-top: 150px;
+        left: 6.5%;
+    }
+    .candit{
+        margin-top: 150px;
+        right: 18.5%;
+    }
+    /*-photo-sec3-*/
+    .img-sec3{
+        margin-top: -290px;
+        transform: scale(0.55);
+    }
+    /*-photo-sec4-*/
+    .img-sec4{
+        margin-top: -210px;
+        margin-bottom: -300px;
+        transform: scale(0.7);
+    }
+    /*-photo-sec5-*/
+    .img-sec5{
+        margin-top: -320px;
+        margin-bottom: -270px;
+        transform: scale(0.7);
+    }
+    .student2-textbox{
+        margin-left: -170px;
+        width: 220px;
+    }
+    /*-photo-sec6-*/
+    .img-sec6{
+        margin-top: -320px;
+        margin-bottom: -280px;
+        flex-direction: column;
+        transform: scale(0.7);
+    }
 }
 @media(max-width:575px){
     .tv-container{
@@ -571,11 +1906,139 @@ html,body{
     .sf-header{
         font-size: 2rem;
     }
+    /*-photo-sec1-*/
+    .img-sec1{
+        margin-top: -210px;
+        transform: scale(0.6);
+    }
+    /*-photo-sec2-*/
+    .img-sec2{
+        margin-top: -440px;
+        transform: scale(0.6);
+    }
+    .belong-together{
+        right: 14%;
+    }
+    .duo{
+        margin-top: 180px;
+        left: 6.5%;
+    }
+    .candit{
+        margin-top: 180px;
+        right: 18.5%;
+    }
+    /*-photo-sec3-*/
+    .img-sec3{
+        margin-top: -430px;
+        transform: scale(0.45);
+    }
+    /*-photo-sec4-*/
+    .img-sec4{
+        margin-top: -330px;
+        margin-bottom: -370px;
+        transform: scale(0.6);
+    }
+    /*-photo-sec5-*/
+    .img-sec5{
+        margin-top: -400px;
+        margin-bottom: -300px;
+        transform: scale(0.6);
+    }
+    .student2-textbox{
+        margin-left: -170px;
+        width: 220px;
+    }
+    /*-photo-sec6-*/
+    .img-sec6{
+        margin-top: -400px;
+        margin-bottom: -330px;
+        flex-direction: column;
+        transform: scale(0.6);
+    }
+    
 }
 @media(max-width:525px){
     /*-sf-list-*/
     .multicamp-rotation{
         width: 260px;
+    }
+    /*-photo-sec1-*/
+    .instruction-photo{
+        justify-content: center;
+        right: 0;
+        transform: scale(0.8);
+        text-align: end;
+    }
+    .img-sec1{
+        margin-top: -235px;
+        transform: scale(0.55);
+    }
+    .img-header{
+        font-size: 2.25rem;
+    }
+    .rim-light{
+        margin-left: 360px;
+    }
+    /*-photo-sec2-*/
+    .img-sec2{
+        margin-top: -500px;
+        transform: scale(0.55);
+    }
+    .belong-together{
+        right: 14%;
+    }
+    .duo{
+        margin-top: 180px;
+        left: 6.5%;
+    }
+    .candit{
+        margin-top: 180px;
+        right: 18.5%;
+    }
+    /*-photo-sec3-*/
+    .img-sec3{
+        margin-top: -480px;
+        transform: scale(0.425);
+    }
+    .splash .img-header , .drip .img-header{
+        font-size: 3rem;
+    }
+    .splash .img-description , .drip .img-description{
+        font-size: 1.75rem;
+    }
+    /*-photo-sec4-*/
+    .img-sec4{
+        margin-top: -360px;
+        margin-bottom: -410px;
+        transform: scale(0.55);
+    }
+    .couple3-textbox{
+        margin-top: 240px;
+    }
+    /*-photo-sec5-*/
+    .img-sec5{
+        margin-top: -450px;
+        margin-bottom: -330px;
+        transform: scale(0.55);
+    }
+    .student2-textbox{
+        margin-left: -170px;
+        width: 220px;
+    }
+    /*-photo-sec6-*/
+    .img-sec6{
+        margin-top: -450px;
+        margin-bottom: -350px;
+        flex-direction: column;
+        transform: scale(0.55);
+    }
+}
+@media(max-width:485px){
+    .side-nav-btn{
+        transform: scale(2);
+    }
+    .sidebar{
+        padding-top: 30px;
     }
 }
 @media(max-width:475px){
@@ -594,6 +2057,74 @@ html,body{
     .bubble-text{
         margin-left: 270px;
     }    
+    /*-photo-sec1-*/
+    .img-sec1{
+        margin-top: -275px;
+        transform: scale(0.5);
+    }
+    .img-header{
+        font-size: 2.5rem;
+    }
+    .photo-description, .photo-creator{
+        font-size:1.5rem;
+    }
+    .rim-light{
+        margin-top: -550px;
+        margin-left: 370px;
+    }
+    /*-photo-sec2-*/
+    .img-sec2{
+        margin-top: -600px;
+        transform: scale(0.5);
+    }
+    .belong-together{
+        right: 14%;
+    }
+    .duo{
+        margin-top: 230px;
+        left: 6.5%;
+    }
+    .candit{
+        margin-top: 230px;
+        right: 18.5%;
+    }
+    /*-photo-sec3-*/
+    .img-sec3{
+        margin-top: -550px;
+        transform: scale(0.385);
+    }
+    /*-photo-sec4-*/
+    .img-sec4{
+        margin-top: -415px;
+        margin-bottom: -430px;
+        transform: scale(0.5);
+    }
+    .couple3-textbox{
+        margin-top: 210px;
+    }
+    /*-photo-sec5-*/
+    .img-sec5{
+        margin-top: -500px;
+        margin-bottom: -350px;
+        transform: scale(0.5);
+    }
+    .student2{
+        left: 35%;
+    }
+    .student2-textbox{
+        margin-left: -220px;
+        width: 270px;
+    }
+    /*-photo-sec6-*/
+    .img-sec6{
+        margin-top: -485px;
+        margin-bottom: -360px;
+        flex-direction: column;
+        transform: scale(0.5);
+    }
+    .siamniramit2{
+        top: 500px;
+    }
 }
 @media(max-width:445px){
     /*-sf-list-*/
@@ -631,6 +2162,90 @@ html,body{
         margin-bottom: -250px;
         transform: scale(0.25);
     }
+    /*-photo-sec1-*/
+    .img-sec1{
+        margin-top: -300px;
+        transform: scale(0.45);
+    }
+    .img-header{
+        font-size: 2.95rem;
+    }
+    .photo-description, .photo-creator{
+        font-size:1.75rem;
+    }
+    .film-portrait{
+        margin-top: 300px;
+    }
+    .rim-light{
+        margin-top: -550px;
+        margin-left: 382px;
+    }
+    /*-photo-sec2-*/
+    .img-sec2{
+        margin-top: -680px;
+        transform: scale(0.45);
+    }
+    .belong-together{
+        right: 19%;
+    }
+    .duo{
+        margin-top: 250px;
+        left: 7%;
+    }
+    .candit{
+        margin-top: 230px;
+        right: 23.5%;
+    }
+    /*-photo-sec3-*/
+    .img-sec3{
+        margin-top: -610px;
+        transform: scale(0.35);
+    }
+    .splash .img-header , .drip .img-header{
+        font-size: 3.75rem;
+    }
+    .splash .img-description , .drip .img-description{
+        font-size: 2.2rem;
+    }
+    .splash .img-creator , .drip .img-creator{
+        font-size: 2.3rem;
+        font-weight: bold;
+    }
+    /*-photo-sec4-*/
+    .img-sec4{
+        margin-top: -450px;
+        margin-bottom: -430px;
+        transform: scale(0.45);
+    }
+    .couple2{
+        margin-top: 250px;
+    }
+    .couple3{
+        margin-top: -50px;
+    }
+    .couple3-textbox{
+        margin-top: 90px;
+    }
+    /*-photo-sec5-*/
+    .img-sec5{
+        margin-top: -600px;
+        margin-bottom: -370px;
+        transform: scale(0.45);
+    }
+    .student2-textbox{
+        margin-left: -270px;
+        width: 320px;
+    }
+    /*-photo-sec6-*/
+    .img-sec6{
+        margin-top: -530px;
+        margin-bottom: -360px;
+        flex-direction: column;
+        transform: scale(0.45);
+    }
+    .siamniramit2{
+        top: 550px;
+    }
 }
 @media(max-width:385px){
     /*-sf-list-*/
@@ -649,6 +2264,68 @@ html,body{
     }
     .multi-socool{
         width:170px;
+    }
+    /*-photo-sec1-*/
+    .img-sec1{
+        margin-top: -340px;
+        transform: scale(0.4);
+    }
+    .rim-light{
+        margin-top: -550px;
+        margin-left: 382px;
+    }
+    /*-photo-sec2-*/
+    .img-sec2{
+        margin-top: -780px;
+        transform: scale(0.4);
+    }
+    .belong-together{
+        right: 19%;
+    }
+    .duo{
+        margin-top: 250px;
+        left: 7%;
+    }
+    .candit{
+        margin-top: 230px;
+        right: 23.5%;
+    }
+    /*-photo-sec3-*/
+    .img-sec3{
+        margin-top: -690px;
+        transform: scale(0.3);
+    }
+    .drip{
+        left: 5%;
+    }
+    .splash{
+        right: 5%;
+    }
+    /*-photo-sec4-*/
+    .img-sec4{
+        margin-top: -540px;
+        margin-bottom: -560px;
+        transform: scale(0.4);
+    }
+    /*-photo-sec5-*/
+    .img-sec5{
+        margin-top: -650px;
+        margin-bottom: -390px;
+        transform: scale(0.4);
+    }
+    .student2-textbox{
+        margin-left: -270px;
+        width: 320px;
+    }
+    /*-photo-sec6-*/
+    .img-sec6{
+        margin-top: -560px;
+        margin-bottom: -400px;
+        flex-direction: column;
+        transform: scale(0.4);
+    }
+    .siamniramit2{
+        top: 550px;
     }
 }
 @media(max-width:350px){
@@ -692,8 +2369,81 @@ html,body{
         margin-bottom: -250px;
         transform: scale(0.2);
     }
+    /*-photo-sec1-*/
+    .img-sec1{
+        margin-top: -420px;
+        transform: scale(0.3);
+    }
+    .rim-light{
+        margin-top: -550px;
+        margin-left: 382px;
+    }
+    /*-photo-sec2-*/
+    .img-sec2{
+        margin-top: -970px;
+        transform: scale(0.3);
+    }
+    .belong-together{
+        right: 19%;
+    }
+    .duo{
+        margin-top: 300px;
+        left: 7%;
+    }
+    .candit{
+        margin-top: 280px;
+        right: 23.5%;
+    }
+    /*-photo-sec3-*/
+    .img-sec3{
+        margin-top: -850px;
+        transform: scale(0.25);
+    }
+    /*-photo-sec4-*/
+    .img-sec4{
+        margin-top: -650px;
+        margin-bottom: -630px;
+        transform: scale(0.3);
+    }
+    /*-photo-sec5-*/
+    .img-sec5{
+        margin-top: -770px;
+        margin-bottom: -420px;
+        transform: scale(0.3);
+    }
+    .student1{
+        right: 40%;
+    }
+    .student2{
+        left: 60%;
+    }
+    .student2-textbox{
+        margin-left: -270px;
+        width: 320px;
+    }
+    /*-photo-sec6-*/
+    .img-sec6{
+        margin-top: -650px;
+        margin-bottom: -460px;
+        flex-direction: column;
+        transform: scale(0.3);
+    }
+    .siamniramit2{
+        top: 550px;
+    }
 }
-@media(min-width:1921px){
+@media(max-width:310px){
+    .side-nav-btn{
+        transform: scale(2);
+    }
+    .sidebar{
+        padding-top: 20px;
+    }
+}
+@media(min-width:2000px) and (max-width:2280px){
+    .side-nav-btn{
+        transform: scale(4);
+    }
     .volume-control{
         transform: scale(1.25) rotate(-90deg);
     }
@@ -712,5 +2462,139 @@ html,body{
     }
     .white-rectangle{
         height: 300px;
+    }
+    /*-photo-section-*/
+    .photo-banner{
+        margin-top: 250px;
+        transform: scale(1.3);
+    }.instruction-photo{
+        padding-right: 600px;
+        margin-top: 50px;
+        transform: scale(1.7);
+    }
+    .img-sec1{
+        margin-top: 200px;
+        margin-bottom: 200px;
+        margin-left: -30px;
+        transform: scale(1.2);
+    }
+    .img-sec2{
+        margin-top: 200px;
+        margin-bottom: 200px;
+        transform: scale(1.2);
+    }
+    .img-sec3{
+        margin-top: 525px;
+        margin-bottom: 200px;
+        transform: scale(1.2);
+    }
+    .belong-together{
+        right: 19%;
+    }
+    .duo{
+        left: 20%;
+    }
+    .candit{
+        right: 23%;
+    }
+    .img-sec4{
+        margin-top: 480px;
+        margin-bottom: 50px;
+        transform: scale(1.2);
+    }
+    .img-sec5{
+        margin-top: 350px;
+        margin-bottom: 50px;
+        transform: scale(1.2);
+    }
+    .img-sec6{
+        margin-top: 350px;
+        margin-bottom: 50px;
+        transform: scale(1.2);
+    }
+    .siamniramit{
+        left: -30%;
+    }
+    .siamniramit2{
+        left: 30%;
+    }
+}
+@media(min-width:2281px){
+    .side-nav-btn{
+        transform: scale(4);
+    }
+    .volume-control{
+        transform: scale(1.25) rotate(-90deg);
+    }
+    .scoll-banner{
+        height: 80px;
+        font-size: 2rem;
+        gap:2.5rem;
+    }
+    /*-sf-list-*/
+    .sf-list{
+        font-size: 2.5rem;
+    }
+    .no-signal-tv{
+        margin-left: -1000px;
+        transform: scale(0.8);
+    }
+    .white-rectangle{
+        height: 300px;
+    }
+    /*-photo-section-*/
+    .photo-banner{
+        margin-top: 250px;
+        transform: scale(1.3);
+    }.instruction-photo{
+        padding-right: 600px;
+        margin-top: 50px;
+        transform: scale(1.7);
+    }
+    .img-sec1{
+        margin-top: 200px;
+        margin-bottom: 200px;
+        margin-left: -70px;
+        transform: scale(1.3);
+    }
+    .img-sec2{
+        margin-top: 200px;
+        margin-bottom: 200px;
+        transform: scale(1.3);
+    }
+    .img-sec3{
+        margin-top: 525px;
+        margin-bottom: 200px;
+        transform: scale(1.3);
+    }
+    .belong-together{
+        right: 19%;
+    }
+    .duo{
+        left: 20%;
+    }
+    .candit{
+        right: 23%;
+    }
+    .img-sec4{
+        margin-top: 480px;
+        margin-bottom: 50px;
+        transform: scale(1.3);
+    }
+    .img-sec5{
+        margin-top: 350px;
+        margin-bottom: 50px;
+        transform: scale(1.3);
+    }
+    .img-sec6{
+        margin-top: 350px;
+        margin-bottom: 50px;
+        transform: scale(1.3);
+    }
+    .siamniramit{
+        left: -30%;
+    }
+    .siamniramit2{
+        left: 30%;
     }
 }
